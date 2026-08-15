@@ -4,5 +4,3 @@
 
 #Tom specific ignores (gimp)
 *.xcf
-*.sln
-*.csproj
