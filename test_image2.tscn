@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cbqjfobegu4ri"]
+
+[ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="1_boe2w"]
+[ext_resource type="PackedScene" uid="uid://dk5vw7x2vooxu" path="res://button.tscn" id="2_boe2w"]
+
+[node name="Node" type="Node" unique_id=1918431880]
+
+[node name="TestImage" type="Sprite2D" parent="." unique_id=1190063682]
+position = Vector2(567.5, 325)
+scale = Vector2(0.59010416, 0.5962963)
+texture = ExtResource("1_boe2w")
+
+[node name="Label" type="Label" parent="TestImage" unique_id=296407728]
+offset_left = -241.48277
+offset_top = -373.97513
+offset_right = 419.5172
+offset_bottom = -274.97513
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 72
+text = "this is a test of text"
+
+[node name="Button" parent="." unique_id=746714891 instance=ExtResource("2_boe2w")]
+offset_left = 882.0
+offset_top = 478.0
+offset_right = 1034.1952
+offset_bottom = 585.0046
+metadata/SceneTransition = "test_image1.tscn"
