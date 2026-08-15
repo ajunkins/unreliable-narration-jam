@@ -19,5 +19,11 @@ public partial class TestButton : Button
 	private void ButtonPressed()
 	{
 		GD.Print("Button was clicked!");
+		string SceneTransition = (string)GetMeta("SceneTransition","");
+		
+		if ( SceneTransition != "")
+		{
+			GetTree().ChangeSceneToFile("res://"+SceneTransition);
+		}
 	}
 }

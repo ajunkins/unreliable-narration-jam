@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bkuvon7nrbtnr"]
+
+[ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="1_qo0nh"]
+[ext_resource type="PackedScene" uid="uid://dk5vw7x2vooxu" path="res://button.tscn" id="2_6ejs1"]
+
+[node name="Node" type="Node" unique_id=1918431880]
+
+[node name="TestImage" type="Sprite2D" parent="." unique_id=1190063682]
+position = Vector2(567.5, 325)
+scale = Vector2(0.59010416, 0.5962963)
+texture = ExtResource("1_qo0nh")
+
+[node name="Button" parent="." unique_id=746714891 instance=ExtResource("2_6ejs1")]
+offset_left = 779.0
+offset_top = 428.0
+offset_right = 931.1952
+offset_bottom = 535.0046
+metadata/SceneTransition = "test_image2.tscn"
