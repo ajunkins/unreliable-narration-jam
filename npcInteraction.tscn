@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bs1y4vad37nlh"]
+
+[ext_resource type="Texture2D" uid="uid://d4atwcy2c1sun" path="res://Sfondo1.png" id="1_mt3tr"]
+[ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="2_wiigw"]
+[ext_resource type="Script" uid="uid://b1i25fedmp084" path="res://TestButton.cs" id="3_o2o7k"]
+
+[node name="NpcInteraction" type="Control" unique_id=1962811433]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sfondo1" type="Sprite2D" parent="." unique_id=1694345683]
+position = Vector2(579, 320.50003)
+scale = Vector2(0.46406248, 0.47569448)
+texture = ExtResource("1_mt3tr")
+
+[node name="Button" type="Button" parent="Sfondo1" unique_id=1267055420]
+offset_left = -1114.0741
+offset_top = 43.09481
+offset_right = 2.1549072
+offset_bottom = 232.2919
+theme_override_fonts/font = ExtResource("2_wiigw")
+text = "Dialogue 1"
+script = ExtResource("3_o2o7k")
+
+[node name="Button2" type="Button" parent="Sfondo1" unique_id=464736360]
+offset_left = -1111.9192
+offset_top = 263.8247
+offset_right = 4.3098145
+offset_bottom = 453.0218
+theme_override_fonts/font = ExtResource("2_wiigw")
+text = "Dialogue 2"
+script = ExtResource("3_o2o7k")
+
+[node name="Button3" type="Button" parent="Sfondo1" unique_id=2112162017]
+offset_left = -1107.6094
+offset_top = 471.94147
+offset_right = 8.619629
+offset_bottom = 661.13855
+theme_override_fonts/font = ExtResource("2_wiigw")
+text = "Dialogue 3"
+script = ExtResource("3_o2o7k")

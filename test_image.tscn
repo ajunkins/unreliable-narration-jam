@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="1_3l8kl"]
 [ext_resource type="Script" uid="uid://b1i25fedmp084" path="res://TestButton.cs" id="2_f7j83"]
+[ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="3_ord58"]
 
 [node name="Node" type="Node" unique_id=1918431880]
 
@@ -15,5 +16,6 @@ offset_left = -51.84669
 offset_top = 95.3917
 offset_right = 100.348495
 offset_bottom = 202.39627
+theme_override_fonts/font = ExtResource("3_ord58")
 text = "Test Button"
 script = ExtResource("2_f7j83")
