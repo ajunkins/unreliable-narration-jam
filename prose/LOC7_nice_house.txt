@@ -1,0 +1,32 @@
+INTRODUCTION:
+The house that you noticed on your way home might more accurately be described as a mansion. Last week, it would have been a sight to see: three stories of brick-faced victorian-style opulence, including a grand pillared entrance and a turret. An iron fence rings the property that takes up a quarter of the block, with a wide gate that bars the way to the house and its accompanying two-car garage. Or, it would have, if it wasn't smashed open.
+
+You step over the half of the expensive gate laying in the concrete driveway and approach the house. It seems quiet enough, but the front door has been left open. Like everywhere else, the lights are off.
+
+The guidebook says to take whatever you need. You reckon that these people had plenty you can take. 
+
+Inside, you're greeted by a foyer with a wide staircase leading up and away. Besides that, you can see a living area and a kitchen. 
+
+OPTION: Check the kitchen.
+Though the fridge is unpowered and the contents are thoroughly rotted, the pantry is well-stocked. You can't take anything that needs reconstituting, as your water is in limited supply already, but theres plenty of canned food that can be eaten raw. You stuff your backpack full.
++6 SUPPLIES
+
+OPTION: Check the living area.
+The television is pushed to the side, as is the couch, opening up what must have once been a well decorated room. In the new space, the owners - or somebody else - has arranged a set of folding chairs a circle. It feels ritualistic and uncanny, and you're about to leave until you notice the handgun sitting at the center.
+
+You step into the cicle and pick it up, only to discover that it's nothing more than a painted plastic toy. Feeling cheated, you look around, almost expecting a prankster to jump out any minute. Nothing happens. 
+
+Even though the chairs are empty, each one of them faces perfectly towards you. 
+
+The guidebook warned you about people like this. You put the toy gun back down and hurry out of the circle of chairs. 
+
+OPTION: Check upstairs.
+Most of the bedrooms are unremarkable, full of twin beds and scattered toys. The gun safe in the master bedroom catches your eye, though. It's been left open.
+
+Most of the calibers are useless to you, and it seems the long guns have all been taken. You gather what ammunition you can use.
++2 AMMUNITION
+
+ON CONTINUE BUTTON:
+On your way home, you notice that someone's set up a pile of crates in a nearby park. The guidebook says it's too dark to check it out now. It'll have to wait.
++LOC_15_public_park
+-return home, consume supply. 

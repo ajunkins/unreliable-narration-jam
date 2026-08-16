@@ -1,0 +1,28 @@
+INTRODUCTION:
+Mikey is long gone, one way or another. The apartment building at the address is burnt to the ground. The cinders are still smoking. A total bust.
+
+As you walk back home, you notice an alleyway off the road, or more accurately, you notice the blue hatchback parked in front of it. There's a tent past it, partially hidden behind a dumpster, and it looks untouched. 
+
+The guidebook says to leave no stone unturned. 
+
+OPTION: Check the hatchback.
+RESULT TEXT:
+The driver's door opens without any complaint. You're not sure why the owners left it unlocked, but you're glad they did. Tucked in the foot space of the passenger seat, you find a backpack stuffed with canned food.
++3 SUPPLIES
+
+OPTION: Check the tent.
+There's someone in the tent, huddled in the corner, clad in a thin hoodie and sweat pants. Facing away from you. They aren't moving at all.
+
+You feel grateful their belongings are left near to the entrance: A handful of batteries, some packaged noodles, and a few bottles of water. 
+
+A glitter of brass sitting on a sleeping bag catches your eye. You pocket the pistol rounds, but there isn't a weapon anywhere to be seen. 
+
+You feel you've overstayed your welcome.
++1 SUPPLIES
++1 AMMUNITION
+
+ON CONTINUE BUTTON
+As you walk home, you notice a few locations that may be worth your time.
++LOC7_nice_home
++LOC9_grocery_store
+- return home, consume supply. 
