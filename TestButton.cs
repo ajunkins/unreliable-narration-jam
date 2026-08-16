@@ -71,6 +71,11 @@ public partial class TestButton : Button
 			{
 				showbutton.Visible = true;
 			}
+			Panel Panelbutton = (Panel)GetNode(path);
+			if (Panelbutton != null)
+			{
+				Panelbutton.Visible = true;
+			}
 		}
 		if (path2.ToString() != "")
 		{
@@ -84,6 +89,11 @@ public partial class TestButton : Button
 			if (hidebutton != null)
 			{
 				hidebutton.Visible = false;
+			}
+			Panel hidePanel = (Panel)GetNode(path);
+			if (hidePanel != null)
+			{
+				hidePanel.Visible = false;
 			}
 
 		}
