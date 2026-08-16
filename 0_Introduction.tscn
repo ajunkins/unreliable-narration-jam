@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://s3tmx2bwusds"]
+
+[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_2bl6a"]
+[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_v05fb"]
+[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_lnoqg"]
+[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_cp0r5"]
+
+[node name="NpcInteraction" type="Control" unique_id=1962811433]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=350363733]
+position = Vector2(577, 321)
+scale = Vector2(2.7122643, 2.0445862)
+texture = ExtResource("1_2bl6a")
+
+[node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 418.0
+offset_right = 928.0
+offset_bottom = 611.0
+
+[node name="ResponseBase" parent="PlayerResponses" unique_id=769636508 instance=ExtResource("3_v05fb")]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 61.0
+offset_right = 686.8451
+offset_bottom = 124.00006
+text = "CONTINUE"
+
+[node name="Panel" type="Panel" parent="." unique_id=1779720814]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 94.0
+offset_right = 1113.0
+offset_bottom = 396.0
+
+[node name="BaseLabel" parent="Panel" unique_id=250299459 instance=ExtResource("4_lnoqg")]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 28.0
+offset_right = 1002.0
+offset_bottom = 259.0
+text = "It started five days ago.
+
+You went into your basement. You barricaded the door. You waited.
+
+Four days ago, the power went out. Three days ago, the water shut off. Two days ago, the sirens stopped. You haven't heard anything since then.
+
+Your supplies won't last forever. Your ammunition is scarce. The silence outside is deafening. 
+
+Thank goodness for your guidebook. You have it in case of emergencies. It knows what to do.
+"
+autowrap_mode = 2
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
+stream = ExtResource("5_cp0r5")
+autoplay = true
