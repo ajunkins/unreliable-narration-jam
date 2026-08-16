@@ -30,10 +30,11 @@ public partial class TestButton : Button
 
 		NodePath path = (NodePath)GetMeta("ShowLabel", "");// on press toggle label
 		
-		bool incrementDay = (bool)GetMeta("IncrementDay","");
+		bool incrementDay = (bool)GetMeta("IncrementDay",false);
 		int AddSupplies = (int)GetMeta("AddSupplies",0);
 		int AddAmmo = (int)GetMeta("AddAmmo",0);
-		bool HideAfterPressed = (bool)GetMeta("HideAfterPressed","");
+		bool HideAfterPressed = (bool)GetMeta("HideAfterPressed",false);
+		bool Reset = (bool)GetMeta("ResetGame",false);
 		
 		//*
 		 if ( TestGlobal != "")
@@ -42,6 +43,7 @@ public partial class TestButton : Button
 			GD.Print(TestGlobal+" = "+ (Globals.GetMyStoryVars().GetGlobal(TestGlobal) ? "true": "false"));
 		}//*/
 		 
+//show label
 		if (path.ToString() != "")
 		{
 			Label ShowLabel = (Label)GetNode(path);
@@ -70,6 +72,10 @@ public partial class TestButton : Button
 		if ( SetGlobal != "")
 		{
 			Globals.GetMyStoryVars().SetGlobal(SetGlobal);
+		}
+		if ( Reset)
+		{
+			Globals.reset();
 		}
 		
 		if ( SceneTransition != "")
