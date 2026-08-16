@@ -6,7 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_h7xe7"]
 [ext_resource type="Texture2D" uid="uid://301hlijhojdu" path="res://sprites/skyline.png" id="5_tbcoe"]
 
-[node name="NpcInteraction" type="Control" unique_id=1962811433]
+[node name="NpcInteraction2" type="Control" unique_id=1962811433]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -36,26 +36,48 @@ text = "Start a new game"
 metadata/SceneTransition = "0_Introduction.tscn"
 metadata/ResetGame = true
 
-[node name="ResponseBase" parent="PlayerResponses/ResponseBase" unique_id=2125352439 instance=ExtResource("3_aepy8")]
+[node name="Soundtest" parent="PlayerResponses" unique_id=2125352439 instance=ExtResource("3_aepy8")]
+visible = false
 layout_mode = 0
-offset_left = -3.0
-offset_top = 90.0
-offset_right = 686.8451
-offset_bottom = 153.00006
+offset_left = -189.0
+offset_top = 7.0
+offset_right = -46.0
+offset_bottom = 70.00006
 text = "SoundTest"
 metadata/SceneTransition = "_SoundTest.tscn"
+
+[node name="Response_Credits" parent="PlayerResponses" unique_id=1734609754 instance=ExtResource("3_aepy8")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 94.0
+offset_right = 689.8451
+offset_bottom = 157.00006
+text = "Credits"
+metadata/SceneTransition = "0_Credits.tscn"
+metadata/ResetGame = false
+
+[node name="DayTest" parent="PlayerResponses" unique_id=870782294 instance=ExtResource("3_aepy8")]
+visible = false
+layout_mode = 0
+offset_left = -194.0
+offset_top = 91.0
+offset_right = -51.0
+offset_bottom = 154.00006
+text = "Day
+Test"
+metadata/SceneTransition = "_DayTest.tscn"
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
 layout_mode = 0
 offset_left = 39.0
-offset_top = 216.0
+offset_top = 39.0
 offset_right = 1113.0
 offset_bottom = 396.0
 
 [node name="BaseLabel" parent="Panel" unique_id=250299459 instance=ExtResource("4_drhwi")]
 layout_mode = 0
-text = "'The Lunatics Guide to the Apocalypse' by S.D Survior
-Edited by Thaddeus M. Ambrose"
+offset_bottom = 342.0
+text = "'The Lunatics Guide to the Apocalypse' by S.D Survior"
 metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""

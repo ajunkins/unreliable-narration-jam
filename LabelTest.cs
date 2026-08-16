@@ -67,5 +67,13 @@ public partial class LabelTest : Label
 			this.Visible = true;
 
 		}
+		
+		//show on day
+		int ShowOnDay = (int)GetMeta("ShowOnDay",0);
+		if (Globals.GetMyStoryVars().Day == ShowOnDay)
+		{
+			this.Visible = true;
+
+		}
 	}
 }
