@@ -1,10 +1,16 @@
 [gd_scene format=3 uid="uid://cox6ffqa711kn"]
 
 [ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_kx516"]
-[ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="2_klqhs"]
 [ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_wxftv"]
 [ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_8yvdc"]
+[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="5_38frc"]
 [ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_gnata"]
+[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="6_jht2i"]
+[ext_resource type="Texture2D" uid="uid://ickgbgsstjxm" path="res://sprites/crate.png" id="7_opso1"]
+[ext_resource type="Texture2D" uid="uid://bfl6lwk6vdf6w" path="res://sprites/npc_bearded_man.png" id="8_m0u3y"]
+[ext_resource type="Texture2D" uid="uid://5sywqixibb76" path="res://sprites/background_door.png" id="9_3swi1"]
+[ext_resource type="Texture2D" uid="uid://c3xqvq3hn3dmx" path="res://sprites/background_door_open.png" id="10_5gpct"]
+[ext_resource type="Texture2D" uid="uid://cnnorcdhsr1jv" path="res://sprites/background_gurney.png" id="11_u5guy"]
 
 [node name="NpcInteraction" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -18,11 +24,6 @@ grow_vertical = 2
 position = Vector2(577, 321)
 scale = Vector2(2.7122643, 2.0445862)
 texture = ExtResource("1_kx516")
-
-[node name="TestImage" type="Sprite2D" parent="." unique_id=1356396064]
-position = Vector2(576, 113)
-scale = Vector2(0.55937505, 0.13608222)
-texture = ExtResource("2_klqhs")
 
 [node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
 layout_mode = 0
@@ -267,3 +268,65 @@ metadata/HideOnVar = ""
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
 stream = ExtResource("5_gnata")
 autoplay = true
+
+[node name="BoundingBox" type="Sprite2D" parent="." unique_id=308090022]
+texture_filter = 1
+position = Vector2(580.00006, 134)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("5_38frc")
+
+[node name="PcSurvivor" type="Sprite2D" parent="BoundingBox" unique_id=652740797]
+position = Vector2(3.714264, 12.285711)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("6_jht2i")
+
+[node name="Crate" type="Sprite2D" parent="BoundingBox" unique_id=623712031]
+position = Vector2(-75.35716, 15.857142)
+rotation = 1.5707964
+scale = Vector2(-1, 1)
+texture = ExtResource("7_opso1")
+
+[node name="Crate2" type="Sprite2D" parent="BoundingBox" unique_id=438277000]
+position = Vector2(89.714264, 16.857141)
+rotation = 1.5707964
+scale = Vector2(-1, 1)
+texture = ExtResource("7_opso1")
+
+[node name="Crate3" type="Sprite2D" parent="BoundingBox" unique_id=1804685982]
+position = Vector2(-83.642876, 15.857142)
+scale = Vector2(-1, 1)
+texture = ExtResource("7_opso1")
+
+[node name="NpcBeardedMan" type="Sprite2D" parent="BoundingBox" unique_id=2077932117]
+position = Vector2(40.2857, 12.285715)
+texture = ExtResource("8_m0u3y")
+
+[node name="BackgroundDoor" type="Sprite2D" parent="BoundingBox" unique_id=1563927923]
+position = Vector2(-51.35716, 3.714285)
+texture = ExtResource("9_3swi1")
+
+[node name="BackgroundDoor2" type="Sprite2D" parent="BoundingBox" unique_id=1796369439]
+position = Vector2(-28.571445, 3.714285)
+texture = ExtResource("9_3swi1")
+
+[node name="BackgroundDoorOpen" type="Sprite2D" parent="BoundingBox" unique_id=191312861]
+position = Vector2(73.999985, 4.285716)
+texture = ExtResource("10_5gpct")
+
+[node name="BackgroundGurney" type="Sprite2D" parent="BoundingBox" unique_id=1546971632]
+position = Vector2(21.42855, 12.857143)
+texture = ExtResource("11_u5guy")
+
+[node name="BackgroundGurney2" type="Sprite2D" parent="BoundingBox" unique_id=1043227961]
+position = Vector2(-53.714302, 17.428572)
+texture = ExtResource("11_u5guy")
+
+[node name="BackgroundGurney3" type="Sprite2D" parent="BoundingBox" unique_id=697746107]
+position = Vector2(64.28569, 16.571428)
+scale = Vector2(-1, 1)
+texture = ExtResource("11_u5guy")
+
+[node name="BackgroundGurney4" type="Sprite2D" parent="BoundingBox" unique_id=1669276557]
+position = Vector2(-28.57145, 12.857143)
+scale = Vector2(-1, 1)
+texture = ExtResource("11_u5guy")
