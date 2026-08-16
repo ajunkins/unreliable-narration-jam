@@ -1,0 +1,52 @@
+INTRODUCTION: 
+The cars jamming up the road and the space around the pumps hide the 'NO MORE GAS' sign hastily written in thick, smeared streaks of red paint on plywood. Minivans, trucks, sedans and SUVs are left abandoned, doors hanging open, windows smashed. Belongings are scattered on the gasoline-stained asphalt in between the tires.
+
+In one of the cars, you find a printed out map of the city. The train station is marked. +LOC6_train_station
+
+The service building seems intact, but it's difficult to see inside with the lights off. Your revolver is heavy in your hand as you stand before jammed-open sliding glass doors.
+
+OPTION: Check the service building.
+RESULT TEXT:
+Most of the shelves here are barren, but people left a few things. You find a few bags of junk food knocked to the floor behind the register, and a plastic water bottle forgotten in the floor of one of the fridges.
+
+You pack up your backpack and turn to exit, but a figure blocks your path. His jacket is torn, his shirt is fithy, and his jeans are ripped to shreds. A dirty beard hides half of his face, and his eyes are wide and wild. You can smell him from across the room.
+
+A machete hangs from his right hand. You raise your revolver. 
+
+"Wait!" he says. "Shit, man, don't shoot!" 
+
+You lower the pistol by a few inches. His shoulders are tensed. He could move at any moment. If he darts into an aisle, you won't have a clean shot anymore.
+
+"Hey, man, did you find anything?" he says, licking his lips. His teeth are crooked and yellow. "I haven't been able to find food, man. I need something." 
+
+You don't move.
+
+"I have a kid," he says, clearly willing to push any luck he has. "A little girl, and she's sick. Come on, man, did you find anything? We need help."
+
+This man is clearly not a father. 
+
+OPTION: Share your supplies.
+RESULT TEXT:
+You can't risk him following you. You drop what little food and water you found on the floor and back away. His eyes follow you all the way out the door. Its another few steps before you aren't able to smell him anymore.
+
+You try not consider the fact that you need those supplies as much as anyone.
++FLAG BM_LOC2_SUPPLIES_GIVEN
+
+OPTION: Do not.
+You keep the pistol trained on him and back away. He stays frozen as you move to the door, but his face twists up. "What the hell, man?" he says. "You animal, what the shit?" 
+
+You can hear him shouting still as you wind through the cars. You worry about him following you, but that's what the pistol is for.
++1 SUPPLIES
+
+ON CONTINUE BUTTON:
+-return home, consume supply. 
+
+
+
+
+
+
+
+
+
+

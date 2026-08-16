@@ -1,0 +1,21 @@
+INTRODUCTION:
+Two ambulances stand on the road outside the clinic. Their doors are left open, and you can clearly see the wadded bandages and stained gurneys within. One is still occupied, and judging from the smell, has been there a while. The heat isn't doing any good.
+
+The clinic itself is smashed to pieces. You walk through the tall, wide windows, reduced to nothing more than a few shards in each frame, and the glass crunches under your boots. You grip your pistol tightly.
+
+The building is dead silent, and dirty shoe prints smear the floor around the front desk, leading into darkened hallways. 
+
+OPTION: Check the front desk.
+RESULT TEXT:
+Patient forms and unopened mail stuffs the drawers behind the receptionist's desk. You're about to write it off, when you notice a slip of paper left on the chair. It has an address, and scribbled underneath: 'MIKEY'S PLACE WILL BE SAFE. MEET THERE SOON. -KELLY'
+
+Seems worth your time. 
++LOC5_alleyway
+
+OPTION: Check the back rooms.
+RESULT TEXT:
+Your flashlight cuts through the darkness in a beam too thin to be comforting. You go from door to door, passing examination rooms and broom closets until you reach a space that's been turned upside down. Every cabinet has been pulled open, and cracked pill bottles and smashed first-aid kits litter the floor. At first glance, it looks hopeless, but after some searching, you find a few useful things.
++3 SUPPLIES
+
+ON CONTINUE BUTTON:
+- return home, consume supply.
