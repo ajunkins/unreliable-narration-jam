@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://dy75wgpj2ohhv"]
+
+[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_em3f5"]
+[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_noeka"]
+[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_t20gs"]
+[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_t7kqx"]
+
+[node name="NpcInteraction" type="Control" unique_id=1962811433]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=350363733]
+position = Vector2(577, 321)
+scale = Vector2(2.7122643, 2.0445862)
+texture = ExtResource("1_em3f5")
+
+[node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 529.0
+offset_right = 928.0
+offset_bottom = 611.0
+
+[node name="ResponseBase" parent="PlayerResponses" unique_id=769636508 instance=ExtResource("3_noeka")]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 8.0
+offset_right = 702.8451
+offset_bottom = 71.00006
+text = "Return"
+metadata/SceneTransition = "0_StartGame.tscn"
+
+[node name="Panel" type="Panel" parent="." unique_id=1779720814]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 63.0
+offset_right = 1113.0
+offset_bottom = 517.0
+
+[node name="BaseLabel" parent="Panel" unique_id=250299459 instance=ExtResource("4_t20gs")]
+layout_mode = 0
+offset_bottom = 437.0
+text = "Credits:
+
+Michael Benjamin
+Alex Junkins
+Tommy Hanusa
+
+Created for the
+'Seattle Indies & Hugo House Narrative Game Jam'
+
+Special Thanks:
+Hugo House Lapis Theater
+Seattle Indies
+Ryder McCorkindale
+Ube 'the' dog
+And the generous contributors of OpenGameArt.org"
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
+stream = ExtResource("5_t7kqx")
+autoplay = true
+parameters/looping = false

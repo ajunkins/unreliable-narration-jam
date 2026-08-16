@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://de1ypawj2l82c"]
 
 [ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_tbcoe"]
-[ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="2_ukakl"]
 [ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_aepy8"]
 [ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_drhwi"]
 [ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_h7xe7"]
@@ -18,11 +17,6 @@ grow_vertical = 2
 position = Vector2(577, 321)
 scale = Vector2(2.7122643, 2.0445862)
 texture = ExtResource("1_tbcoe")
-
-[node name="TestImage" type="Sprite2D" parent="." unique_id=1356396064]
-position = Vector2(576, 113)
-scale = Vector2(0.55937505, 0.13608222)
-texture = ExtResource("2_ukakl")
 
 [node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
 layout_mode = 0
@@ -41,26 +35,37 @@ text = "Start a new game"
 metadata/SceneTransition = "0_Introduction.tscn"
 metadata/ResetGame = true
 
-[node name="ResponseBase" parent="PlayerResponses/ResponseBase" unique_id=2125352439 instance=ExtResource("3_aepy8")]
+[node name="Soundtest" parent="PlayerResponses" unique_id=2125352439 instance=ExtResource("3_aepy8")]
+visible = false
 layout_mode = 0
-offset_left = -3.0
-offset_top = 90.0
-offset_right = 686.8451
-offset_bottom = 153.00006
+offset_left = -189.0
+offset_top = 2.0
+offset_right = -46.0
+offset_bottom = 65.00006
 text = "SoundTest"
 metadata/SceneTransition = "_SoundTest.tscn"
+
+[node name="Response_Credits" parent="PlayerResponses" unique_id=1734609754 instance=ExtResource("3_aepy8")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 94.0
+offset_right = 689.8451
+offset_bottom = 157.00006
+text = "Credits"
+metadata/SceneTransition = "0_Credits.tscn"
+metadata/ResetGame = false
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
 layout_mode = 0
 offset_left = 39.0
-offset_top = 216.0
+offset_top = 39.0
 offset_right = 1113.0
 offset_bottom = 396.0
 
 [node name="BaseLabel" parent="Panel" unique_id=250299459 instance=ExtResource("4_drhwi")]
 layout_mode = 0
-text = "'The Lunatics Guide to the Apocalypse' by S.D Survior
-Edited by Thaddeus M. Ambrose"
+offset_bottom = 342.0
+text = "'The Lunatics Guide to the Apocalypse' by S.D Survior"
 metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
