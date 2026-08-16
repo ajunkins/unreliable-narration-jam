@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://brehj7smk74vi"]
+
+[ext_resource type="Texture2D" uid="uid://dyll0imfmgh02" path="res://map_black_background_higher_res.png" id="1_y2wwp"]
+[ext_resource type="Texture2D" uid="uid://ct325awstd8w0" path="res://home.png" id="2_eceo5"]
+[ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="3_x5pqh"]
+[ext_resource type="Texture2D" uid="uid://0hge526jnqw4" path="res://down.png" id="4_37m1j"]
+
+[node name="Control" type="Control" unique_id=1255501912]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MapBlackBackgroundHigherRes" type="Sprite2D" parent="." unique_id=1610351068]
+position = Vector2(576, 324)
+scale = Vector2(2.7169812, 2.0636942)
+texture = ExtResource("1_y2wwp")
+
+[node name="Home" type="Button" parent="." unique_id=1048671598]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 312.0
+offset_right = 619.0
+offset_bottom = 370.0
+icon = ExtResource("2_eceo5")
+
+[node name="NeighborHouse" type="Button" parent="." unique_id=1573411948]
+layout_mode = 0
+offset_left = 646.0
+offset_top = 311.0
+offset_right = 687.0
+offset_bottom = 349.0
+theme_override_fonts/font = ExtResource("3_x5pqh")
+text = "Neighbor's house"
+icon = ExtResource("4_37m1j")
+
+[node name="GasStation" type="Button" parent="." unique_id=391102362]
+layout_mode = 0
+offset_left = 458.0
+offset_top = 405.0
+offset_right = 670.0
+offset_bottom = 463.0
+theme_override_fonts/font = ExtResource("3_x5pqh")
+text = "Gas Station"
+icon = ExtResource("4_37m1j")
+
+[node name="Clinic" type="Button" parent="." unique_id=1133725142]
+layout_mode = 0
+offset_left = 617.0
+offset_top = 201.0
+offset_right = 829.0
+offset_bottom = 259.0
+theme_override_fonts/font = ExtResource("3_x5pqh")
+text = "Clinic"
+icon = ExtResource("4_37m1j")
