@@ -1,0 +1,68 @@
+INTORDUCTION:
+The hospital is a nightmare. The roads around are flooded with abandoned cars, packed so tightly together that you need to clamber over hoods to get to the front entrance.
+
+The inside is even worse. Gurneys clutter the emergency bay. Gowns, coats, and sullied clothing sit in darkened piles placed seemingly at random. Where it isn't occupied by abandoned belongings, the floor is smeared with now-browned footprints.
+
+The further you walk from the light of the entrance, the more unnerved you get. Still, the guidebook is clear - if you want to survive, you're going to need the medical supplies hiding within.
+
+OPTION: Search the ER for suplies.
+RESULT TEXT:
+Though it at first seems chaotic, you find the room where the EMTs were keeping their triage supplies. Much of it is worked through, the plastic bins emptied and stacked in a corner and filled with used plastic wrapping. There's an unopened bin in the back, though, and when you crack it open, you find a treasure trove: water, bandages, saline, even a few MREs. The guidebook is right again. 
+
+It doesn't take you long to pack. As you do, you wonder why it was left behind. 
++6 SUPPLIES
+
+OPTION: Search further into the building. 
+
+You venture further into the hospital, leaving the light of the ER windows behind. Much of the rest of the hospital is either the same - a chaotic mess of sullied medical equipment - or curiously empty, clean, and scoured of anything useful at all.
+
+The windowless halls in the bowels of the hospital are oppressively dark, and you only have your flashlight for company. On the third floor, though, you see signs pointing to a supply room, clearly written in a hurry and meant for whatever staff remained. You follow the signs to what looks like a supply closet. It's unlocked.
+
+===
+IF FLAG BM_LOC2_SUPPLIES_GIVEN AND FLAG BM_LOC9_SUPPLIES_GIVEN
+The moment you step inside, you're nearly blinded by the beam of another flashlight in your eyes. You fumble for your pistol for a moment, but the light drops a moment later. "Oh, it's just you."
+
+The bearded man stands in the middle of the supply room. His backpack sits open at his feet, nearly overflowing with white plastic pill bottles.  He huffs out a tired laugh and gives you a weak grin. "Didn't expect anyone to find me in here."
+
+You consider reaching for your pistol, but he has you dead to rights. He's still got that machete, and he could easily close the distance between you. You kick yourself for not following the guidebook to the letter. 
+
+"Listen, there's plenty left. In fact - here." He kneels down, setting the machete on the tiles to reach into his bag. He removes a few bags of junk food, a can or two, and a bottle of water... as well as a few glittering brass cartridges.
+
+"I've been meaning to pay you back, you know," he said. "You helped me more than you know."
+
+You say nothing. He shrugs, zips his pack back up, and slings it over his shoulder. You numbly step aside to let him pass.
+
+Along with the gifts, there's still plenty left in the room. You gather it up in a few moments. 
++5 SUPPLIES
++1 AMMUNITION
+
+===
+
+IF FLAG BM_LOC2_SUPPLIES_GIVEN OR FLAG BM_LOC9_SUPPLIES_GIVEN
+The moment you step inside, you're nearly blinded by the beam of another flashlight in your eyes. You fumble for your pistol for a moment, but the light drops a moment later. "Oh, you again."
+
+The bearded man stands in the middle of the supply room. His backpack sits open at his feet, nearly overflowing with white plastic pill bottles. He gives you a hard stare. "Figures you'd show up here."
+
+You consider reaching for your pistol, but he has you dead to rights. He's still got that machete, and he could easily close the distance between you. You kick yourself for not following the guidebook to the letter. 
+
+"Listen, there's plenty left. No need to do anything insane again." He deftly zips up his bag and slings it onto his back, keeping his machete in hand the whole time.
+
+You stare at each other for a moment.
+
+"I'm going to leave now," he says. You don't have much of a choice, here, and numbly step aside to let him pass. 
+
+There's still plenty left in the room. You gather it up in a few moments. 
++3 SUPPLIES
+
+===
+
+ELSE
+The supply room has been drained of most things useful, clearly of prime importance a few days ago. Still, there's plenty left that you can use. You gather it up in a few moments. 
++3 SUPPLIES
+
+===
+
+ON CONTINUE BUTTON
+-return home, consume supply
+
+

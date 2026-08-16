@@ -1,9 +1,78 @@
 INTRODUCTION:
-The parking lot for the grocery store is completely empty, but the inside is a mess. Smashed and rotten produce on the floor. Tangles of shopping carts in the aisles. Whole shelving units knocked into one another like dominoes. 
+The parking lot for the grocery store is completely empty, but the inside is a mess. Smashed and rotten food on the linoleum floor. Tangles of shopping carts in the aisles. Whole shelving units knocked into one another like dominoes. 
 
 It must have been hit early.
 
 You're used to a din of voices over soft music, the beeping of registers, the squeaking wheels on mistreated shopping carts. The utter silence is unnerving, but the guidebook always says to push past your discomfort to survive. The people here were panicked. With the guidebook in hand, you'll make no such mistakes. 
 
-You make your way away from the stench of the produce aisle. 
+You make your way away from the wet stench of the produce aisle, moving further back into the store. The chaos lessens the further from the entrance you walk, the more the building resembles its past self, save for the lack of power. You shine your narrow flashlight beam from aisle to aisle, but it isn't the light that informs you of your company - its the sound. A clatter of cans falling to linoleum just a few shelves down.
 
+You draw your pistol and dart forward, shine your light into the darkness. The bearded man stares back, blinking in the cold, harsh light, standing over a pile of tin cans still settling from its mass tumble from the shelves. He holds one can in his left hand, and the machete in his right. The flashlight beam paints his face pale and bonelike. 
+
+===
+
+IF FLAG BM_LOC2_SUPPLIES_GIVEN:
+"Oh, it's just you," he says. He watches you take a step back and bares his teeth in what's probably supposed to be a grin. "Sorry if I surprised you with the, uh--" He waves his machete at the cans. "I scared myself, too."
+
+You remain silent.
+
+He shuffles from foot to foot. "Hey, that stuff you gave me really came in handy. My daughter's sick, so I'm gonna need most of this, but you can have what's left." He nudges a can with his foot. "She's getting sick,
+
+This sort of greed is what the guidebook warned you about. 
+
+OPTION: Let him take the supplies.
+RESULT TEXT: 
+You don't move a muscle. You're not going to let him out of your sight. He gathers up most of the cans into his backpack before backing away. 
+
+"I guess I'll catch you later," he says, stalking into the darkness. 
+
+You listen to his footsteps recede and grip your pistol tighter. He didn't leave much behind.
++FLAG BM_LOC9_SUPPLIES_GIVEN
++2 SUPPLIES
+
+OPTION: Do not. 
+RESULT TEXT:
+You raise your pistol and point it at the bearded man, center of mass. 
+
+"What the hell, man?" He drops the can and staggers back a few steps. He widens his eyes in surprise, and they shine with an uncanny brightness in the beam of the flashlight. "What the fuck is wrong with you?" 
+
+You flick the point of your pistol to the side. No point in wasting ammunition.
+
+"Jesus christ..." The bearded man stares at you for another few seconds, shocked and disgusted, before backing away into the darkness. You listen to his footsteps recede and grip your pistol tighter. 
++6 SUPPLIES
+===
+
+ELSE:
+"You," the bearded man growls. He watches you take a step back and sneers. "Found your way back here, too, huh? Well, back off, asshole." He waves his machete at the cans. "I got here first."
+
+You remain silent.
+
+He hunches over. His eyes dart over the space before you. The guidebook has already told you that this means he's calculating the distance between. How fast he can cross it.
+
+"Listen, asshole, my daughter is sick. This shit is mine." He grins darkly, the creases around his eyes shadowed dark like cuts in the beam of your flashlight. "You can have what's left. I won't take it all." 
+
+This sort of animal is what the guidebook warned you about.
+
+OPTION: Let him take supplies.
+RESULT TEXT:
+You know that an animal cornered is at its most dangerous. You take a step back, and he scoops cans into his backpack until its full, then backs off into the darkness, staring at you all the while with narrowed eyes.
+
+There's barely anything left.
++FLAG BM_LOC9_SUPPLIES_GIVEN
++2 SUPPLIES
+
+OPTION: Open fire. 
+RESULT TEXT:
+You snap your pistol up and take aim. He widens his eyes and turns to run, but you're quick. It takes a few rounds, and the roar of gunfire thunders off the shelves, but he collapses into a heap in the aisle.
+
+It's a good thing the guidebook taught you how to spot a liar, otherwise you'd be bothered by the idea of his daughter left alone. 
+-2 AMMUNITION
++6 SUPPLIES
++FLAG MURDERER
+
+===
+
+ON CONTINUE BUTTON
+On your way home, you see the local hospital peeking over a nearby roof. It's a ways away, but the guidebook recommends hospitals as excellent sources of supplies.
++LOC13_hospital
+-return home, consume supply 
