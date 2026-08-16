@@ -1,0 +1,61 @@
+Background:
+Bounding box
+
+Characters:
+Survivor normal - done
+survivor aiming - done
+survivor dead
+bearded man normal - done
+bearded man dead - done
+
+masked woman normal (P2)
+masked woman aiming (P2)
+masked woman dead   (P2)
+
+Scene items:
+LOC0:
+barricaded door - done
+sitting survivor - done
+supply pile - done
+water jugs (?) - done
+
+LOC1:
+Chair - done
+suitcases - done
+stair - done
+
+LOC2:
+gas pump - done
+shelf - done
+
+LOC3:
+desk - done
+open door - done
+
+LOC5:
+car - done
+tent - done
+
+LOC7:
+fridge and pantry (reused)
+chairs - done
+stairs (reused)
+
+LOC9:
+shelves (reused)
+shopping carts - done
+
+LOC13:
+gurneys - done
+open door (reused)
+
+
+
+
+
+
+
+
+
+
+
