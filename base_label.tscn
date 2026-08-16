@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b0y7ta43ux1av"]
+
+[ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="1_b0yy1"]
+[ext_resource type="Script" uid="uid://cpu5ffsqqj5mq" path="res://LabelTest.cs" id="2_fcxfk"]
+
+[node name="BaseLabel" type="Label" unique_id=250299459]
+offset_right = 1074.0
+offset_bottom = 180.0
+theme_override_fonts/font = ExtResource("1_b0yy1")
+theme_override_font_sizes/font_size = 14
+text = "sadfasdfsadfsadf"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_fcxfk")

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c1ik0ke7fqqjs"]
+
+[ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="1_75puo"]
+[ext_resource type="Script" uid="uid://b1i25fedmp084" path="res://TestButton.cs" id="2_rm0kh"]
+
+[node name="ResponseBase" type="Button" unique_id=769636508]
+offset_left = -2.0
+offset_top = 5.0
+offset_right = 687.8451
+offset_bottom = 68.00006
+theme_override_fonts/font = ExtResource("1_75puo")
+text = "Response Base. This is a basic response. This is how much text we can show."
+script = ExtResource("2_rm0kh")
+metadata/SceneTransition = ""
+metadata/SetGlobal = ""
+metadata/TestGlobal = ""
+metadata/ShowLabel = NodePath("")
+metadata/IncrementDay = false
+metadata/AddSupplies = 0
+metadata/AddAmmo = 0
+metadata/HideAfterPressed = true
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
