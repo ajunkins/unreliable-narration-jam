@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dystsylsu0jc4"]
+
+[ext_resource type="Script" uid="uid://cpu5ffsqqj5mq" path="res://LabelTest.cs" id="1_rksib"]
+
+[node name="Label_Day" type="Label" unique_id=1939447612]
+offset_left = 1.0
+offset_top = 7.0
+offset_right = 33.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "#"
+script = ExtResource("1_rksib")
+metadata/SetAsOverrideLabel = "day"
