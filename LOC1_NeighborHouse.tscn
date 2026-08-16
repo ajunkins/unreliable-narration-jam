@@ -158,6 +158,7 @@ metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
 [node name="Prose2" parent="Panel" unique_id=2075636996 instance=ExtResource("4_h6psl")]
+visible = false
 layout_mode = 0
 text = "There's a few suitcases by the door, ready to go, but you didn't see a car in the driveway. The remains of dinner sit on the dining room table, uneaten. The fridge door hangs open - nothing edible in there, not by now - but the pantry looks unraided. A flight of stairs leads up and out of sight."
 autowrap_mode = 3
