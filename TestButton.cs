@@ -30,7 +30,8 @@ public partial class TestButton : Button
 		string SetGlobal = (string)GetMeta("SetGlobal","");
 		string TestGlobal = (string)GetMeta("TestGlobal","");
 
-		NodePath path = (NodePath)GetMeta("ShowLabel", "");// on press toggle label
+		NodePath path = (NodePath)GetMeta("ShowLabel", "");// on press show label
+		NodePath path2 = (NodePath)GetMeta("HideLabel", "");// on press hide label
 		
 		bool incrementDay = (bool)GetMeta("IncrementDay",false);
 		int AddSupplies = (int)GetMeta("AddSupplies",0);
@@ -60,7 +61,31 @@ public partial class TestButton : Button
 		if (path.ToString() != "")
 		{
 			Label ShowLabel = (Label)GetNode(path);
-			ShowLabel.Visible = !ShowLabel.Visible;
+			if (ShowLabel != null)
+			{
+				ShowLabel.Visible = true; //!ShowLabel.Visible;
+			}
+			
+			Button showbutton = (Button)GetNode(path);
+			if (showbutton != null)
+			{
+				showbutton.Visible = true;
+			}
+		}
+		if (path2.ToString() != "")
+		{
+			Label hidelabel = (Label)GetNode(path);
+			if (hidelabel != null)
+			{
+				hidelabel.Visible = false; //!hidelabel.Visible;
+			}
+			
+			Button hidebutton = (Button)GetNode(path);
+			if (hidebutton != null)
+			{
+				hidebutton.Visible = false;
+			}
+
 		}
 
 		if (incrementDay)
