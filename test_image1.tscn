@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="1_qo0nh"]
 [ext_resource type="PackedScene" uid="uid://dk5vw7x2vooxu" path="res://button.tscn" id="2_6ejs1"]
+[ext_resource type="PackedScene" uid="uid://dystsylsu0jc4" path="res://label_day.tscn" id="2_siar5"]
 
 [node name="Node" type="Node" unique_id=1918431880]
 
@@ -10,9 +11,30 @@ position = Vector2(567.5, 325)
 scale = Vector2(0.59010416, 0.5962963)
 texture = ExtResource("1_qo0nh")
 
+[node name="Label2" type="Label" parent="." unique_id=1301556109]
+offset_left = 684.0
+offset_top = 202.0
+offset_right = 1019.0
+offset_bottom = 295.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "This is a test of text  ="
+
+[node name="Label_Day" parent="Label2" unique_id=1939447612 instance=ExtResource("2_siar5")]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 0.0
+offset_right = 374.0
+offset_bottom = 93.0
+
+[node name="GameData" type="Node2D" parent="." unique_id=2060070091]
+
 [node name="Button" parent="." unique_id=746714891 instance=ExtResource("2_6ejs1")]
-offset_left = 779.0
-offset_top = 428.0
-offset_right = 931.1952
-offset_bottom = 535.0046
+offset_left = 942.0
+offset_top = 469.0
+offset_right = 1094.1952
+offset_bottom = 576.0046
 metadata/SceneTransition = "test_image2.tscn"
+metadata/TestGlobal = "testvar"
+metadata/SetGlobal = "testvar"
+metadata/IncrementDay = true

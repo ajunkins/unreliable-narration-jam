@@ -10,3 +10,7 @@ offset_bottom = 59.004578
 text = "Test Button"
 script = ExtResource("1_r04n3")
 metadata/SceneTransition = ""
+metadata/TestGlobal = ""
+metadata/SetGlobal = ""
+metadata/ShowLabel = NodePath("")
+metadata/IncrementDay = false
