@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://gvt07uh1nvbc"]
+
+[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_34g1f"]
+[ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="2_57bgq"]
+[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="3_54txd"]
+
+[node name="Control" type="Control" unique_id=1532912088]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=772930936]
+position = Vector2(576, 324)
+scale = Vector2(2.7169812, 2.0636942)
+texture = ExtResource("1_34g1f")
+
+[node name="Label" type="Label" parent="." unique_id=507484513]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 324.0
+theme_override_fonts/font = ExtResource("2_57bgq")
+theme_override_font_sizes/font_size = 36
+text = "YOU DIED"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Label" type="Label" parent="Label" unique_id=1616562935]
+layout_mode = 0
+offset_top = 324.0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_fonts/font = ExtResource("2_57bgq")
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1896355174]
+stream = ExtResource("3_54txd")
+autoplay = true
+parameters/looping = false

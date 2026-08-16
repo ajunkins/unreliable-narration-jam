@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ct325awstd8w0" path="res://home.png" id="2_eceo5"]
 [ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="3_x5pqh"]
 [ext_resource type="Texture2D" uid="uid://0hge526jnqw4" path="res://down.png" id="4_37m1j"]
-[ext_resource type="AudioStream" uid="uid://dly3ocl1y0pms" path="res://Sounds/old city theme.ogg" id="5_x5pqh"]
+[ext_resource type="AudioStream" uid="uid://dpij54b17eicw" path="res://sounds/old city theme.ogg" id="5_x5pqh"]
 
 [node name="Control" type="Control" unique_id=1255501912]
 layout_mode = 3
@@ -78,7 +78,6 @@ text = "Apartment Complex"
 icon = ExtResource("4_37m1j")
 
 [node name="Phase3" type="Control" parent="." unique_id=244947179]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -104,7 +103,6 @@ text = "Train Station"
 icon = ExtResource("4_37m1j")
 
 [node name="Phase4" type="Control" parent="." unique_id=991134156]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -150,7 +148,6 @@ text = "Parking Garage"
 icon = ExtResource("4_37m1j")
 
 [node name="Phase5" type="Control" parent="." unique_id=988038262]
-visible = false
 anchors_preset = 0
 offset_left = 525.0
 offset_top = 67.0
@@ -191,3 +188,4 @@ icon = ExtResource("4_37m1j")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1877171222]
 stream = ExtResource("5_x5pqh")
 autoplay = true
+parameters/looping = true

@@ -62,3 +62,4 @@ metadata/HideOnVar = ""
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
 stream = ExtResource("5_f1hph")
 autoplay = true
+parameters/looping = true
