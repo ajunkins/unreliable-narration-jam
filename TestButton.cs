@@ -123,7 +123,7 @@ public partial class TestButton : Button
 		}
 		
 		//show on day
-		int ShowOnDay = (int)GetMeta("ShowOnDay",0);
+		int ShowOnDay = (int)GetMeta("ShowOnDay",-1);
 		if (Globals.GetMyStoryVars().Day == ShowOnDay)
 		{
 			this.Visible = true;

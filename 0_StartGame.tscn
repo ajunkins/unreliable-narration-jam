@@ -6,7 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_h7xe7"]
 [ext_resource type="Texture2D" uid="uid://301hlijhojdu" path="res://sprites/skyline.png" id="5_tbcoe"]
 
-[node name="NpcInteraction" type="Control" unique_id=1962811433]
+[node name="NpcInteraction2" type="Control" unique_id=1962811433]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
