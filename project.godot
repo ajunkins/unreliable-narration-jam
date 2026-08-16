@@ -15,14 +15,11 @@ run/main_scene="uid://bkuvon7nrbtnr"
 config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
-<<<<<<< HEAD
 [autoload]
 
 DialogueManager="*uid://c3rodes2l3gxb"
 Globals="*uid://hfn2v14ppxkv"
 
-=======
->>>>>>> main
 [dialogue_manager]
 
 runtime/advanced/uses_dotnet=true
