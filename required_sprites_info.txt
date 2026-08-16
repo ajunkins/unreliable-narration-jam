@@ -28,7 +28,7 @@ LOC2:
 gas pump - done
 shelf - done
 
-LOC3:
+LOC3 clinic:
 desk - done
 open door - done
 

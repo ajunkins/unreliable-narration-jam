@@ -1,10 +1,16 @@
 [gd_scene format=3 uid="uid://ctk5ad8loqoxp"]
 
 [ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_8fx2r"]
-[ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="2_g6a0v"]
 [ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_yor0c"]
 [ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_5kqmc"]
+[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="5_gtm6x"]
 [ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_p6krh"]
+[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="6_y58jv"]
+[ext_resource type="Texture2D" uid="uid://ickgbgsstjxm" path="res://sprites/crate.png" id="7_clys5"]
+[ext_resource type="Texture2D" uid="uid://dcu23hwv5nat" path="res://sprites/background_shelves.png" id="8_wpgoh"]
+[ext_resource type="Texture2D" uid="uid://dko3jgy51kqk1" path="res://sprites/background_cart_1.png" id="9_dc7h5"]
+[ext_resource type="Texture2D" uid="uid://wis0o4c75lp8" path="res://sprites/background_cart_2.png" id="10_216gy"]
+[ext_resource type="Texture2D" uid="uid://bfl6lwk6vdf6w" path="res://sprites/npc_bearded_man.png" id="11_wxo6g"]
 
 [node name="NpcInteraction" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -19,104 +25,30 @@ position = Vector2(577, 321)
 scale = Vector2(2.7122643, 2.0445862)
 texture = ExtResource("1_8fx2r")
 
-[node name="TestImage" type="Sprite2D" parent="." unique_id=1356396064]
-position = Vector2(576, 113)
-scale = Vector2(0.55937505, 0.13608222)
-texture = ExtResource("2_g6a0v")
-
-[node name="PlayerResponses1" type="Panel" parent="." unique_id=529216286]
-visible = false
+[node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
 layout_mode = 0
 offset_left = 238.0
 offset_top = 418.0
 offset_right = 928.0
 offset_bottom = 611.0
 
-[node name="ResponseBase" parent="PlayerResponses1" unique_id=769636508 instance=ExtResource("3_yor0c")]
+[node name="ResponseBase" parent="PlayerResponses" unique_id=769636508 instance=ExtResource("3_yor0c")]
 layout_mode = 0
 offset_left = 0.0
 offset_top = 13.0
 offset_right = 689.8451
 offset_bottom = 76.00006
-text = "Let him take the supplies."
+text = "Start a new game"
 
-[node name="ResponseBase2" parent="PlayerResponses1" unique_id=145729705 instance=ExtResource("3_yor0c")]
+[node name="ResponseBase2" parent="PlayerResponses" unique_id=145729705 instance=ExtResource("3_yor0c")]
 layout_mode = 0
 offset_left = 0.0
 offset_top = 70.0
 offset_right = 689.8451
 offset_bottom = 133.00006
-text = "Do not."
+text = "This button does something else"
 
-[node name="ResponseBase3" parent="PlayerResponses1" unique_id=2034856569 instance=ExtResource("3_yor0c")]
-visible = false
-layout_mode = 0
-offset_left = 0.0
-offset_top = 125.0
-offset_right = 689.8451
-offset_bottom = 188.00006
-text = "dont say you aren't spoiled for choice"
-
-[node name="PlayerResponses2" type="Panel" parent="." unique_id=1047521948]
-visible = false
-layout_mode = 0
-offset_left = 238.0
-offset_top = 418.0
-offset_right = 928.0
-offset_bottom = 611.0
-
-[node name="ResponseBase" parent="PlayerResponses2" unique_id=597955502 instance=ExtResource("3_yor0c")]
-layout_mode = 0
-offset_left = 0.0
-offset_top = 13.0
-offset_right = 689.8451
-offset_bottom = 76.00006
-text = "Let him take the supplies."
-
-[node name="ResponseBase2" parent="PlayerResponses2" unique_id=229194497 instance=ExtResource("3_yor0c")]
-layout_mode = 0
-offset_left = 0.0
-offset_top = 70.0
-offset_right = 689.8451
-offset_bottom = 133.00006
-text = "Open fire."
-
-[node name="ResponseBase3" parent="PlayerResponses2" unique_id=1150885716 instance=ExtResource("3_yor0c")]
-visible = false
-layout_mode = 0
-offset_left = 0.0
-offset_top = 125.0
-offset_right = 689.8451
-offset_bottom = 188.00006
-text = "dont say you aren't spoiled for choice"
-
-[node name="PlayerResponses3" type="Panel" parent="." unique_id=1575475189]
-visible = false
-layout_mode = 0
-offset_left = 238.0
-offset_top = 418.0
-offset_right = 928.0
-offset_bottom = 611.0
-
-[node name="ResponseBase" parent="PlayerResponses3" unique_id=1882050365 instance=ExtResource("3_yor0c")]
-layout_mode = 0
-offset_left = 0.0
-offset_top = 13.0
-offset_right = 689.8451
-offset_bottom = 76.00006
-text = "-return home, consume supply"
-
-[node name="ResponseBase2" parent="PlayerResponses3" unique_id=582933651 instance=ExtResource("3_yor0c")]
-visible = false
-layout_mode = 0
-offset_left = 0.0
-offset_top = 70.0
-offset_right = 689.8451
-offset_bottom = 133.00006
-text = "Open fire."
-
-[node name="ResponseBase3" parent="PlayerResponses3" unique_id=1949221728 instance=ExtResource("3_yor0c")]
-visible = false
+[node name="ResponseBase3" parent="PlayerResponses" unique_id=2034856569 instance=ExtResource("3_yor0c")]
 layout_mode = 0
 offset_left = 0.0
 offset_top = 125.0
@@ -373,3 +305,66 @@ metadata/HideOnVar = ""
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
 stream = ExtResource("5_p6krh")
 autoplay = true
+
+[node name="BoundingBox" type="Sprite2D" parent="." unique_id=152914685]
+texture_filter = 1
+position = Vector2(580.00006, 134)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("5_gtm6x")
+
+[node name="PcSurvivor" type="Sprite2D" parent="BoundingBox" unique_id=843009957]
+position = Vector2(-69.14286, 11.428569)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("6_y58jv")
+
+[node name="Crate" type="Sprite2D" parent="BoundingBox" unique_id=1930195115]
+position = Vector2(-25.142878, 14.857142)
+rotation = 1.5707964
+scale = Vector2(-1, 1)
+texture = ExtResource("7_clys5")
+
+[node name="Crate3" type="Sprite2D" parent="BoundingBox" unique_id=865676332]
+position = Vector2(-33.428593, 14.857142)
+scale = Vector2(-1, 1)
+texture = ExtResource("7_clys5")
+
+[node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox" unique_id=1363525145]
+position = Vector2(-2.8571558, 3.714284)
+texture = ExtResource("8_wpgoh")
+
+[node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox/BackgroundShelves" unique_id=1797383549]
+position = Vector2(10.000004, 1.7142842)
+texture = ExtResource("8_wpgoh")
+
+[node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox/BackgroundShelves/BackgroundShelves" unique_id=1983385756]
+position = Vector2(10.857147, 3.1428556)
+texture = ExtResource("8_wpgoh")
+
+[node name="BackgroundShelves2" type="Sprite2D" parent="BoundingBox" unique_id=1748502565]
+position = Vector2(-2.8571558, 3.714284)
+texture = ExtResource("8_wpgoh")
+
+[node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox/BackgroundShelves2" unique_id=1175710212]
+position = Vector2(10.000004, 1.7142842)
+texture = ExtResource("8_wpgoh")
+
+[node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox/BackgroundShelves2/BackgroundShelves" unique_id=204406551]
+position = Vector2(10.857147, 3.1428556)
+texture = ExtResource("8_wpgoh")
+
+[node name="BackgroundCart1" type="Sprite2D" parent="BoundingBox" unique_id=1376011775]
+position = Vector2(-50.571445, 14.571427)
+scale = Vector2(0.9, 1)
+texture = ExtResource("9_dc7h5")
+
+[node name="BackgroundCart2" type="Sprite2D" parent="BoundingBox/BackgroundCart1" unique_id=1272802867]
+position = Vector2(122.968254, -1.7857153)
+texture = ExtResource("10_216gy")
+
+[node name="BackgroundCart1" type="Sprite2D" parent="BoundingBox/BackgroundCart1" unique_id=2050882875]
+position = Vector2(140.42857, 1.0714275)
+texture = ExtResource("9_dc7h5")
+
+[node name="NpcBeardedMan" type="Sprite2D" parent="BoundingBox" unique_id=1204890290]
+position = Vector2(42.2857, 10.857143)
+texture = ExtResource("11_wxo6g")
