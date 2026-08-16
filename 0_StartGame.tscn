@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_aepy8"]
 [ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_drhwi"]
 [ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_h7xe7"]
+[ext_resource type="Texture2D" uid="uid://301hlijhojdu" path="res://sprites/skyline.png" id="5_tbcoe"]
 
 [node name="NpcInteraction" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -84,3 +85,8 @@ metadata/HideOnVar = ""
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
 stream = ExtResource("5_h7xe7")
 autoplay = true
+
+[node name="Skyline" type="Sprite2D" parent="." unique_id=333788620]
+position = Vector2(569, 112)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_tbcoe")
