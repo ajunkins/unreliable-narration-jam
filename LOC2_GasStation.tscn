@@ -64,7 +64,6 @@ offset_right = 1113.0
 offset_bottom = 396.0
 
 [node name="Prose1" parent="Panel" unique_id=250299459 instance=ExtResource("4_lt4y4")]
-visible = false
 layout_mode = 0
 text = "The cars jamming up the road and the space around the pumps hide the 'NO MORE GAS' sign hastily written in thick, smeared streaks of red paint on plywood. Minivans, trucks, sedans and SUVs are left abandoned, doors hanging open, windows smashed. Belongings are scattered on the gasoline-stained asphalt in between the tires."
 autowrap_mode = 3
