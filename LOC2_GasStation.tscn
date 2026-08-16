@@ -51,23 +51,24 @@ texture = ExtResource("6_hfhdt")
 position = Vector2(78.85712, 10.857142)
 texture = ExtResource("7_2apcr")
 
-[node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
+[node name="PlayerResponses1" type="Panel" parent="." unique_id=529216286]
+visible = false
 layout_mode = 0
 offset_left = 238.0
 offset_top = 418.0
 offset_right = 928.0
 offset_bottom = 611.0
 
-[node name="ResponseBase" parent="PlayerResponses" unique_id=769636508 instance=ExtResource("3_cr0ll")]
+[node name="ResponseBase" parent="PlayerResponses1" unique_id=769636508 instance=ExtResource("3_cr0ll")]
 layout_mode = 0
 offset_left = 0.0
 offset_top = 13.0
 offset_right = 689.8451
 offset_bottom = 76.00006
-text = "Start a new game"
-metadata/ResetGame = true
+text = "Check the service building."
 
-[node name="ResponseBase2" parent="PlayerResponses" unique_id=145729705 instance=ExtResource("3_cr0ll")]
+[node name="ResponseBase2" parent="PlayerResponses1" unique_id=145729705 instance=ExtResource("3_cr0ll")]
+visible = false
 layout_mode = 0
 offset_left = 0.0
 offset_top = 70.0
@@ -75,7 +76,75 @@ offset_right = 689.8451
 offset_bottom = 133.00006
 text = "This button does something else"
 
-[node name="ResponseBase3" parent="PlayerResponses" unique_id=2034856569 instance=ExtResource("3_cr0ll")]
+[node name="ResponseBase3" parent="PlayerResponses1" unique_id=2034856569 instance=ExtResource("3_cr0ll")]
+visible = false
+layout_mode = 0
+offset_left = 0.0
+offset_top = 125.0
+offset_right = 689.8451
+offset_bottom = 188.00006
+text = "dont say you aren't spoiled for choice"
+
+[node name="PlayerResponses2" type="Panel" parent="." unique_id=110913281]
+visible = false
+layout_mode = 0
+offset_left = 238.0
+offset_top = 418.0
+offset_right = 928.0
+offset_bottom = 611.0
+
+[node name="ResponseBase" parent="PlayerResponses2" unique_id=131313378 instance=ExtResource("3_cr0ll")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 13.0
+offset_right = 689.8451
+offset_bottom = 76.00006
+text = "Share your supplies."
+
+[node name="ResponseBase2" parent="PlayerResponses2" unique_id=310151433 instance=ExtResource("3_cr0ll")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 70.0
+offset_right = 689.8451
+offset_bottom = 133.00006
+text = "Do not."
+
+[node name="ResponseBase3" parent="PlayerResponses2" unique_id=1682745853 instance=ExtResource("3_cr0ll")]
+visible = false
+layout_mode = 0
+offset_left = 0.0
+offset_top = 125.0
+offset_right = 689.8451
+offset_bottom = 188.00006
+text = "dont say you aren't spoiled for choice"
+
+[node name="PlayerResponses3" type="Panel" parent="." unique_id=2021584389]
+visible = false
+layout_mode = 0
+offset_left = 238.0
+offset_top = 418.0
+offset_right = 928.0
+offset_bottom = 611.0
+
+[node name="ResponseBase" parent="PlayerResponses3" unique_id=836314737 instance=ExtResource("3_cr0ll")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 13.0
+offset_right = 689.8451
+offset_bottom = 76.00006
+text = "-return home, consume supply. "
+
+[node name="ResponseBase2" parent="PlayerResponses3" unique_id=357437580 instance=ExtResource("3_cr0ll")]
+visible = false
+layout_mode = 0
+offset_left = 0.0
+offset_top = 70.0
+offset_right = 689.8451
+offset_bottom = 133.00006
+text = "Do not."
+
+[node name="ResponseBase3" parent="PlayerResponses3" unique_id=1571227636 instance=ExtResource("3_cr0ll")]
+visible = false
 layout_mode = 0
 offset_left = 0.0
 offset_top = 125.0
