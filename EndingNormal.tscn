@@ -19,23 +19,68 @@ texture = ExtResource("1_nhpl3")
 
 [node name="Label" type="Label" parent="." unique_id=507484513]
 layout_mode = 0
-offset_right = 1152.0
+offset_left = 1.0
+offset_right = 1153.0
 offset_bottom = 324.0
 theme_override_fonts/font = ExtResource("2_yvwg5")
-theme_override_font_sizes/font_size = 36
-text = "Epilogue"
+theme_override_font_sizes/font_size = 19
+text = "You wake to the sound of engines.
+
+When you exit your basement, you see flatbed military trucks in tan and green rolling town the street, loaded with crates and soldiers. Following behind are ambulances and SUVs packed with people.
+
+Rescuers.
+
+A woman in a high-vis vest asks you if you're okay."
 horizontal_alignment = 1
 vertical_alignment = 2
+autowrap_mode = 3
 
-[node name="Label" type="Label" parent="Label" unique_id=1616562935]
+[node name="if BM_FRIENDLY" type="Label" parent="Label" unique_id=1616562935]
+visible = false
 layout_mode = 0
-offset_top = 324.0
+offset_top = 260.0
 offset_right = 1152.0
-offset_bottom = 648.0
+offset_bottom = 584.0
 theme_override_fonts/font = ExtResource("2_yvwg5")
-text = "Lorum Ipsum"
+theme_override_font_sizes/font_size = 19
+text = "You see the bearded man. Beside him, holding his hand, is a little girl no more than eight or nine. She wears a ratty school backpack and holds a stuffed animal close to her chest. Her eyes are wide and tired.
+
+The bearded man notices you and waves. You do not wave back."
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="if MURDERER" type="Label" parent="Label" unique_id=1031857687]
+visible = false
+layout_mode = 0
+offset_top = 260.0
+offset_right = 1152.0
+offset_bottom = 584.0
+theme_override_fonts/font = ExtResource("2_yvwg5")
+theme_override_font_sizes/font_size = 19
+text = "You're taken to the local police station. A few officers stand around, sporting bulletproof vests and handguns in holsters. More people are sweeiping things up, putting things back together.
+
+Somebody sits you down and tells you that you're being held on suspicion of murder"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label2" type="Label" parent="." unique_id=1003001388]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 289.0
+offset_right = 1153.0
+offset_bottom = 613.0
+theme_override_fonts/font = ExtResource("2_yvwg5")
+theme_override_font_sizes/font_size = 19
+text = "The guidebook didn't mention anything about this.
+
+
+
+THE END"
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1307356579]
 stream = ExtResource("3_yvwg5")
