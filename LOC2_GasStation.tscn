@@ -1,10 +1,15 @@
 [gd_scene format=3 uid="uid://1lcxu81v384a"]
 
 [ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_f5scv"]
-[ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="2_vthd3"]
+[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="2_g8sbv"]
 [ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_cr0ll"]
+[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="3_vmval"]
+[ext_resource type="Texture2D" uid="uid://bhs4fjey7uuox" path="res://sprites/background_car.png" id="4_eiu8v"]
 [ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_lt4y4"]
 [ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_2m3uj"]
+[ext_resource type="Texture2D" uid="uid://ycs3q6ilkfhp" path="res://sprites/background_gas_pumps.png" id="5_h5viu"]
+[ext_resource type="Texture2D" uid="uid://dcu23hwv5nat" path="res://sprites/background_shelves.png" id="6_hfhdt"]
+[ext_resource type="Texture2D" uid="uid://bfl6lwk6vdf6w" path="res://sprites/npc_bearded_man.png" id="7_2apcr"]
 
 [node name="NpcInteraction" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -15,14 +20,36 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=350363733]
-position = Vector2(577, 321)
+position = Vector2(578, 321)
 scale = Vector2(2.7122643, 2.0445862)
 texture = ExtResource("1_f5scv")
 
-[node name="TestImage" type="Sprite2D" parent="." unique_id=1356396064]
-position = Vector2(576, 113)
-scale = Vector2(0.55937505, 0.13608222)
-texture = ExtResource("2_vthd3")
+[node name="BoundingBox" type="Sprite2D" parent="." unique_id=1430020147]
+texture_filter = 1
+position = Vector2(580.00006, 134)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("2_g8sbv")
+
+[node name="PcSurvivor" type="Sprite2D" parent="BoundingBox" unique_id=1634165838]
+position = Vector2(-32.85717, 10.285712)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("3_vmval")
+
+[node name="BackgroundCar" type="Sprite2D" parent="BoundingBox" unique_id=1934676367]
+position = Vector2(-70.000015, 9.428571)
+texture = ExtResource("4_eiu8v")
+
+[node name="BackgroundGasPumps" type="Sprite2D" parent="BoundingBox" unique_id=693166327]
+position = Vector2(-10.571448, 9.714287)
+texture = ExtResource("5_h5viu")
+
+[node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox" unique_id=1642150589]
+position = Vector2(37.42855, 5.9999986)
+texture = ExtResource("6_hfhdt")
+
+[node name="NpcBeardedMan" type="Sprite2D" parent="BoundingBox" unique_id=1550980904]
+position = Vector2(78.85712, 10.857142)
+texture = ExtResource("7_2apcr")
 
 [node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
 layout_mode = 0
