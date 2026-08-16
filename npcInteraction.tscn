@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://bs1y4vad37nlh"]
 
-[ext_resource type="Texture2D" uid="uid://d4atwcy2c1sun" path="res://Sfondo1.png" id="1_mt3tr"]
+[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_o2o7k"]
 [ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="3_wiigw"]
 [ext_resource type="Script" uid="uid://dda7l2e7av8u" path="res://DialogueButton.cs" id="4_f1hph"]
 [ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="4_wadpt"]
+[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_f1hph"]
 
 [node name="NpcInteraction" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -13,111 +14,68 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Sfondo1" type="Sprite2D" parent="." unique_id=1694345683]
-position = Vector2(544, 308)
-scale = Vector2(0.46406248, 0.47569448)
-texture = ExtResource("1_mt3tr")
+[node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=350363733]
+position = Vector2(577, 321)
+scale = Vector2(2.7122643, 2.0445862)
+texture = ExtResource("1_o2o7k")
 
-[node name="TestImage" type="Sprite2D" parent="Sfondo1" unique_id=1356396064]
-position = Vector2(-10.774403, -403.6204)
-scale = Vector2(1.2053874, 0.28607062)
+[node name="TestImage" type="Sprite2D" parent="." unique_id=1356396064]
+position = Vector2(576, 113)
+scale = Vector2(0.55937505, 0.13608222)
 texture = ExtResource("4_wadpt")
 
-[node name="Prose" type="Panel" parent="Sfondo1" unique_id=1263237513]
-offset_left = -846.8687
-offset_top = -170.27742
-offset_right = 907.2055
-offset_bottom = 290.10205
-
-[node name="ProseText" type="Label" parent="Sfondo1/Prose" unique_id=317907678]
+[node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
 layout_mode = 0
-offset_right = 1749.7644
-offset_bottom = 456.1751
+offset_left = 238.0
+offset_top = 418.0
+offset_right = 928.0
+offset_bottom = 611.0
+
+[node name="Response1" type="Button" parent="PlayerResponses" unique_id=167287937]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 690.0
+offset_bottom = 63.00006
 theme_override_fonts/font = ExtResource("3_wiigw")
-text = "wewrbwrebrvrveavervraevaervraevg"
+text = "Respopnse 1"
+script = ExtResource("4_f1hph")
+
+[node name="Response2" type="Button" parent="PlayerResponses" unique_id=1286686965]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 63.0
+offset_right = 690.0
+offset_bottom = 126.00006
+theme_override_fonts/font = ExtResource("3_wiigw")
+text = "Response 2"
+script = ExtResource("4_f1hph")
+
+[node name="Response3" type="Button" parent="PlayerResponses" unique_id=579549740]
+layout_mode = 0
+offset_top = 126.0
+offset_right = 689.8451
+offset_bottom = 189.00006
+theme_override_fonts/font = ExtResource("3_wiigw")
+text = "Response 3"
+script = ExtResource("4_f1hph")
+
+[node name="Panel" type="Panel" parent="." unique_id=1779720814]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 216.0
+offset_right = 1113.0
+offset_bottom = 396.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=1049300007]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 180.0
+theme_override_fonts/font = ExtResource("3_wiigw")
+theme_override_font_sizes/font_size = 14
+text = "sadfasdfsadfsadf"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PlayerResponses" type="Panel" parent="Sfondo1" unique_id=529216286]
-offset_left = -846.8687
-offset_top = 321.635
-offset_right = 907.2055
-offset_bottom = 597.02185
-
-[node name="Response1" type="Button" parent="Sfondo1/PlayerResponses" unique_id=167287937]
-layout_mode = 0
-offset_left = 2.1548767
-offset_top = -6.1035156e-05
-offset_right = 1749.7644
-offset_bottom = 86.18964
-theme_override_fonts/font = ExtResource("3_wiigw")
-text = "entry 1"
-script = ExtResource("4_f1hph")
-
-[node name="Response2" type="Button" parent="Sfondo1/PlayerResponses" unique_id=1480581493]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.45577392
-offset_left = 2.1548767
-offset_top = 94.59851
-offset_right = 950.3031
-offset_bottom = 180.78821
-theme_override_fonts/font = ExtResource("3_wiigw")
-text = "entry 2"
-script = ExtResource("4_f1hph")
-metadata/_edit_use_anchors_ = true
-
-[node name="Response3" type="Button" parent="Sfondo1/PlayerResponses" unique_id=610175447]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.45577392
-offset_left = 2.1548767
-offset_top = 189.19702
-offset_right = 950.3031
-offset_bottom = 275.38672
-theme_override_fonts/font = ExtResource("3_wiigw")
-text = "entry 3"
-script = ExtResource("4_f1hph")
-metadata/_edit_use_anchors_ = true
-
-[node name="PlayerResponses2" type="Panel" parent="Sfondo1" unique_id=1485496445]
-offset_left = -846.8687
-offset_top = 321.635
-offset_right = 907.2055
-offset_bottom = 597.02185
-
-[node name="Response1" type="Button" parent="Sfondo1/PlayerResponses2" unique_id=580504549]
-layout_mode = 0
-offset_left = 2.1548767
-offset_top = -6.1035156e-05
-offset_right = 1749.7644
-offset_bottom = 86.18964
-theme_override_fonts/font = ExtResource("3_wiigw")
-text = "entry 1"
-script = ExtResource("4_f1hph")
-
-[node name="Response2" type="Button" parent="Sfondo1/PlayerResponses2" unique_id=2037326424]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.45577392
-offset_left = 2.1548767
-offset_top = 94.59851
-offset_right = 950.3031
-offset_bottom = 180.78821
-theme_override_fonts/font = ExtResource("3_wiigw")
-text = "entry 2"
-script = ExtResource("4_f1hph")
-metadata/_edit_use_anchors_ = true
-
-[node name="Response3" type="Button" parent="Sfondo1/PlayerResponses2" unique_id=1564421132]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.45577392
-offset_left = 2.1548767
-offset_top = 189.19702
-offset_right = 950.3031
-offset_bottom = 275.38672
-theme_override_fonts/font = ExtResource("3_wiigw")
-text = "entry 3"
-script = ExtResource("4_f1hph")
-metadata/_edit_use_anchors_ = true
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
+stream = ExtResource("5_f1hph")
+autoplay = true
