@@ -1,0 +1,32 @@
+You wake to the sound of engines.
+
+When you exit your basement, you see flatbed military trucks in tan and green rolling town the street, loaded with crates and soldiers. Following behind are ambulances and SUVs packed with people.
+
+Rescuers.
+
+Someone asks you if you're okay.
+
+===
+
+IF FLAG BM_FRIENDLY:
+Text added:
+
+You see the bearded man. Beside him, holding his hand, is a little girl no more than eight or nine. She wears a ratty school backpack and holds a stuffed animal close to her chest. Her eyes are wide and tired.
+
+The bearded man notices you and waves. You do not wave back.
+
+===
+
+IF FLAG MURDERER:
+Text added:
+
+You're taken to the local police station. A few officers stand around, sporting bulletproof vests and handguns in holsters. More people are sweeiping things up, putting things back together.
+
+Somebody sits you down and tells you that you're being held on suspicion of murder.
+
+===
+
+The guidebook didn't mention anything about this.
+
+
+THE END
