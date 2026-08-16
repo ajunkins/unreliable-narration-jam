@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://de1ypawj2l82c"]
 
 [ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_tbcoe"]
-[ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="2_ukakl"]
 [ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_aepy8"]
 [ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_drhwi"]
 [ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_h7xe7"]
+[ext_resource type="Texture2D" uid="uid://301hlijhojdu" path="res://sprites/skyline.png" id="5_tbcoe"]
 
 [node name="NpcInteraction" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -18,11 +18,6 @@ grow_vertical = 2
 position = Vector2(577, 321)
 scale = Vector2(2.7122643, 2.0445862)
 texture = ExtResource("1_tbcoe")
-
-[node name="TestImage" type="Sprite2D" parent="." unique_id=1356396064]
-position = Vector2(576, 113)
-scale = Vector2(0.55937505, 0.13608222)
-texture = ExtResource("2_ukakl")
 
 [node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
 layout_mode = 0
@@ -68,3 +63,8 @@ metadata/HideOnVar = ""
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
 stream = ExtResource("5_h7xe7")
 autoplay = true
+
+[node name="Skyline" type="Sprite2D" parent="." unique_id=333788620]
+position = Vector2(569, 112)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_tbcoe")
