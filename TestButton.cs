@@ -10,6 +10,9 @@ public partial class TestButton : Button
 		// Called when the node enters the scene tree for the first time.
 		this.Pressed += ButtonPressed;
 		GD.Print("Button test");
+		
+		this.MetaVarsUpdate();// do all the updating based on vars
+
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,9 +28,12 @@ public partial class TestButton : Button
 		string SetGlobal = (string)GetMeta("SetGlobal","");
 		string TestGlobal = (string)GetMeta("TestGlobal","");
 
-		NodePath path = (NodePath)GetMeta("ShowLabel", "");
+		NodePath path = (NodePath)GetMeta("ShowLabel", "");// on press toggle label
 		
 		bool incrementDay = (bool)GetMeta("IncrementDay","");
+		int AddSupplies = (int)GetMeta("AddSupplies",0);
+		int AddAmmo = (int)GetMeta("AddAmmo",0);
+		bool HideAfterPressed = (bool)GetMeta("HideAfterPressed","");
 		
 		//*
 		 if ( TestGlobal != "")
@@ -47,16 +53,54 @@ public partial class TestButton : Button
 			Globals.incrementDay();
 		}
 
+		if (AddSupplies != 0)
+		{
+			Globals.AddToSupplies(AddSupplies);
+		}
+		if (AddAmmo != 0)
+		{
+			Globals.AddToAmmo(AddAmmo);
+		}
+
+		if (HideAfterPressed)
+		{
+			this.Visible = false;
+		}
+
 		if ( SetGlobal != "")
 		{
-			//Globals.GetMyStoryVars();
-			//Globals global = (Globals)GetNode("/root/Globals");
 			Globals.GetMyStoryVars().SetGlobal(SetGlobal);
 		}
 		
 		if ( SceneTransition != "")
 		{
 			GetTree().ChangeSceneToFile("res://"+SceneTransition);
+		}
+	}
+	
+	/// <summary>
+	/// Metavars Update (usually happens when level is loaded, todo: able to be set to happen on update?
+	/// </summary>
+	public void MetaVarsUpdate()
+	{
+
+		//show on var//todo test
+		string ShowOnVar = (string)GetMeta("ShowOnVar","");
+		if (ShowOnVar != "")
+		{
+			if (Globals.GetMyStoryVars().GetGlobal(ShowOnVar))
+			{
+				this.Visible = true;
+
+			}
+
+		}
+		//hide on var//todo test
+		string HideOnVar = (string)GetMeta("HideOnVar","");
+		if (Globals.GetMyStoryVars().GetGlobal(ShowOnVar))
+		{
+			this.Visible = true;
+
 		}
 	}
 }

@@ -38,3 +38,4 @@ metadata/SceneTransition = "test_image2.tscn"
 metadata/TestGlobal = "testvar"
 metadata/SetGlobal = "testvar"
 metadata/IncrementDay = true
+metadata/temp = 0
