@@ -13,6 +13,8 @@ public partial class TestButton : Button
 		
 		this.MetaVarsUpdate();// do all the updating based on vars
 
+		
+		//AudioStreamPlayer
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -36,6 +38,17 @@ public partial class TestButton : Button
 		bool HideAfterPressed = (bool)GetMeta("HideAfterPressed",false);
 		bool Reset = (bool)GetMeta("ResetGame",false);
 		
+		AudioStream sound = (AudioStream)GetMeta("PlaySound",false);
+		
+
+		if (sound != null)
+		{
+			AudioStreamPlayer  SoundNode = (AudioStreamPlayer)GetNode("/root/NpcInteraction/AudioStreamPlayerFX");
+			SoundNode.Stream = sound;
+			SoundNode.Play();
+			
+		}
+
 		//*
 		 if ( TestGlobal != "")
 		{

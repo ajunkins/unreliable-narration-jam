@@ -34,6 +34,20 @@ public partial class LabelTest : Label
 				this.Text = Globals.GetMyStoryVars().Day.ToString();
 				break;
 		}
+		
+		//audio
+		string SoundOnVar = (string)GetMeta("SoundOnVar","");
+		AudioStream sound = (AudioStream)GetMeta("VarSound", false);
+		if (sound != null && SoundOnVar !="")
+		{
+			if (Globals.GetMyStoryVars().GetGlobal(SoundOnVar))
+			{
+				AudioStreamPlayer SoundNode = (AudioStreamPlayer)GetNode("/root/NpcInteraction/AudioStreamPlayerFX");
+				SoundNode.Stream = sound;
+				SoundNode.Play();
+			}
+
+		}
 
 		//show on var//todo test
 		string ShowOnVar = (string)GetMeta("ShowOnVar","");
