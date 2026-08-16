@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_o2o7k"]
 [ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="3_wiigw"]
-[ext_resource type="Script" uid="uid://dda7l2e7av8u" path="res://DialogueButton.cs" id="4_f1hph"]
 [ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="4_wadpt"]
 [ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_f1hph"]
 
@@ -38,7 +37,6 @@ offset_right = 690.0
 offset_bottom = 63.00006
 theme_override_fonts/font = ExtResource("3_wiigw")
 text = "Respopnse 1"
-script = ExtResource("4_f1hph")
 
 [node name="Response2" type="Button" parent="PlayerResponses" unique_id=1286686965]
 layout_mode = 0
@@ -48,7 +46,6 @@ offset_right = 690.0
 offset_bottom = 126.00006
 theme_override_fonts/font = ExtResource("3_wiigw")
 text = "Response 2"
-script = ExtResource("4_f1hph")
 
 [node name="Response3" type="Button" parent="PlayerResponses" unique_id=579549740]
 layout_mode = 0
@@ -57,7 +54,6 @@ offset_right = 689.8451
 offset_bottom = 189.00006
 theme_override_fonts/font = ExtResource("3_wiigw")
 text = "Response 3"
-script = ExtResource("4_f1hph")
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
 layout_mode = 0
@@ -79,3 +75,4 @@ vertical_alignment = 1
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
 stream = ExtResource("5_f1hph")
 autoplay = true
+parameters/looping = true
