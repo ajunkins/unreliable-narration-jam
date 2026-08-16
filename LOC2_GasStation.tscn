@@ -1,0 +1,208 @@
+[gd_scene format=3 uid="uid://1lcxu81v384a"]
+
+[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_f5scv"]
+[ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="2_vthd3"]
+[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_cr0ll"]
+[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_lt4y4"]
+[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_2m3uj"]
+
+[node name="NpcInteraction" type="Control" unique_id=1962811433]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=350363733]
+position = Vector2(577, 321)
+scale = Vector2(2.7122643, 2.0445862)
+texture = ExtResource("1_f5scv")
+
+[node name="TestImage" type="Sprite2D" parent="." unique_id=1356396064]
+position = Vector2(576, 113)
+scale = Vector2(0.55937505, 0.13608222)
+texture = ExtResource("2_vthd3")
+
+[node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 418.0
+offset_right = 928.0
+offset_bottom = 611.0
+
+[node name="ResponseBase" parent="PlayerResponses" unique_id=769636508 instance=ExtResource("3_cr0ll")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 13.0
+offset_right = 689.8451
+offset_bottom = 76.00006
+text = "Start a new game"
+metadata/ResetGame = true
+
+[node name="ResponseBase2" parent="PlayerResponses" unique_id=145729705 instance=ExtResource("3_cr0ll")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 70.0
+offset_right = 689.8451
+offset_bottom = 133.00006
+text = "This button does something else"
+
+[node name="ResponseBase3" parent="PlayerResponses" unique_id=2034856569 instance=ExtResource("3_cr0ll")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 125.0
+offset_right = 689.8451
+offset_bottom = 188.00006
+text = "dont say you aren't spoiled for choice"
+
+[node name="Panel" type="Panel" parent="." unique_id=1779720814]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 216.0
+offset_right = 1113.0
+offset_bottom = 396.0
+
+[node name="Prose1" parent="Panel" unique_id=250299459 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "The cars jamming up the road and the space around the pumps hide the 'NO MORE GAS' sign hastily written in thick, smeared streaks of red paint on plywood. Minivans, trucks, sedans and SUVs are left abandoned, doors hanging open, windows smashed. Belongings are scattered on the gasoline-stained asphalt in between the tires."
+autowrap_mode = 3
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose2" parent="Panel" unique_id=1415295415 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "In one of the cars, you find a printed out map of the city. The train station is marked.
++LOC6_train_station"
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose3" parent="Panel" unique_id=814419827 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "The service building seems intact, but it's difficult to see inside with the lights off. Your revolver is heavy in your hand as you stand before jammed-open sliding glass doors."
+autowrap_mode = 3
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose4" parent="Panel" unique_id=1694066107 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "Most of the shelves here are barren, but people left a few things. You find a few bags of junk food knocked to the floor behind the register, and a plastic water bottle forgotten in the floor of one of the fridges."
+autowrap_mode = 3
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose5" parent="Panel" unique_id=411773623 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "You pack up your backpack and turn to exit, but a figure blocks your path. His jacket is torn, his shirt is fithy, and his jeans are ripped to shreds. A dirty beard hides half of his face, and his eyes are wide and wild. You can smell him from across the room."
+autowrap_mode = 3
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose6" parent="Panel" unique_id=469388695 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "A machete hangs from his right hand. You raise your revolver."
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose7" parent="Panel" unique_id=451349135 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "\"Wait!\" he says. \"Holy shit, man, don't shoot!\"
+"
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose8" parent="Panel" unique_id=1635271111 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "You lower the pistol by a few inches. His shoulders are tensed. He could move at any moment. If he darts into an aisle, you won't have a clean shot anymore. The guidebook is clear in this situation. "
+autowrap_mode = 3
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose9" parent="Panel" unique_id=437902120 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "\"Hey, man, did you find anything?\" he says, licking his lips. His teeth are crooked and yellow. \"I haven't been able to find food, man. I need something.\" "
+autowrap_mode = 3
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose10" parent="Panel" unique_id=617791898 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "You don't move."
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose11" parent="Panel" unique_id=171538652 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "\"I have a kid,\" he says, clearly willing to push any luck he has. \"A little girl. Come on, man, did you find anything? We need help.\""
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose12" parent="Panel" unique_id=1088037282 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "This man is clearly not a father."
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose13" parent="Panel" unique_id=707979846 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "You can't risk him following you. You drop what little food and water you found on the floor and back away. His eyes follow you all the way out the door. Its another few steps before you aren't able to smell him anymore."
+autowrap_mode = 3
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose14" parent="Panel" unique_id=622933917 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "You try not consider the fact that you need those supplies as much as anyone.
++FLAG BM_LOC2_SUPPLIES_GIVEN"
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose15" parent="Panel" unique_id=1019220539 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "You keep the pistol trained on him and back away. He stays frozen as you move to the door, but his face twists up. \"What the hell, man?\" he says. \"You animal, what the shit?\""
+autowrap_mode = 3
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose16" parent="Panel" unique_id=128594898 instance=ExtResource("4_lt4y4")]
+visible = false
+layout_mode = 0
+text = "You can hear him shouting still as you wind through the cars. You worry about him following you, but that's what the pistol is for.
++1 SUPPLIES"
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
+stream = ExtResource("5_2m3uj")
+autoplay = true

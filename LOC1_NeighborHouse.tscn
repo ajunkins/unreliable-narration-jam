@@ -1,0 +1,124 @@
+[gd_scene format=3 uid="uid://esw8osti3ye4"]
+
+[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_qcy86"]
+[ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="2_vauky"]
+[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_isec6"]
+[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_h6psl"]
+[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_lu8ki"]
+
+[node name="NpcInteraction" type="Control" unique_id=1962811433]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=350363733]
+position = Vector2(577, 321)
+scale = Vector2(2.7122643, 2.0445862)
+texture = ExtResource("1_qcy86")
+
+[node name="TestImage" type="Sprite2D" parent="." unique_id=1356396064]
+position = Vector2(576, 113)
+scale = Vector2(0.55937505, 0.13608222)
+texture = ExtResource("2_vauky")
+
+[node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 418.0
+offset_right = 928.0
+offset_bottom = 611.0
+
+[node name="ResponseBase" parent="PlayerResponses" unique_id=769636508 instance=ExtResource("3_isec6")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 13.0
+offset_right = 689.8451
+offset_bottom = 76.00006
+text = "Check the pantry..."
+
+[node name="ResponseBase2" parent="PlayerResponses" unique_id=145729705 instance=ExtResource("3_isec6")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 70.0
+offset_right = 689.8451
+offset_bottom = 133.00006
+text = "Check upstairs..."
+
+[node name="ResponseBase3" parent="PlayerResponses" unique_id=2034856569 instance=ExtResource("3_isec6")]
+visible = false
+layout_mode = 0
+offset_left = 0.0
+offset_top = 125.0
+offset_right = 689.8451
+offset_bottom = 188.00006
+text = "dont say you aren't spoiled for choice"
+
+[node name="Panel" type="Panel" parent="." unique_id=1779720814]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 216.0
+offset_right = 1113.0
+offset_bottom = 396.0
+
+[node name="Prose1" parent="Panel" unique_id=250299459 instance=ExtResource("4_h6psl")]
+visible = false
+layout_mode = 0
+text = "The neighbors left their house unlocked. You let yourself in without a sound. The air is cloying and stale."
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose2" parent="Panel" unique_id=2075636996 instance=ExtResource("4_h6psl")]
+layout_mode = 0
+text = "There's a few suitcases by the door, ready to go, but you didn't see a car in the driveway. The remains of dinner sit on the dining room table, uneaten. The fridge door hangs open - nothing edible in there, not by now - but the pantry looks unraided. A flight of stairs leads up and out of sight."
+autowrap_mode = 3
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose3" parent="Panel" unique_id=797699136 instance=ExtResource("4_h6psl")]
+visible = false
+layout_mode = 0
+text = "You're thankful there's enough windows to see comfortably, but that means anyone outside can see you. Better work quick."
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose4" parent="Panel" unique_id=1568034569 instance=ExtResource("4_h6psl")]
+visible = false
+layout_mode = 0
+text = "The neighbors didn't have much before they left, or maybe they took their nonperishables. It doesn't matter now. There's a few cans in here, and you put them in your backpack.
++2 SUPPLIES"
+autowrap_mode = 3
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose5" parent="Panel" unique_id=387295285 instance=ExtResource("4_h6psl")]
+visible = false
+layout_mode = 0
+text = "The bedrooms have clothing scattered over the furniture and on the floor. In the master, a safe sits open, its contents spilled out before it. Bills, papers, jewelery. Plenty of value, nothing of use. "
+autowrap_mode = 3
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="Prose6" parent="Panel" unique_id=1638802790 instance=ExtResource("4_h6psl")]
+visible = false
+layout_mode = 0
+text = "From the second floor widow, you can see some locations of note:
+
+The local gas station. There's a cluster of cars abandoned near the pumps. 
++LOC2_gas_station
+A clinic down the street. The front windows are shattered, but it might still hold supplies. 
++LOC3_clinic"
+metadata/SetAsOverrideLabel = ""
+metadata/ShowOnVar = ""
+metadata/HideOnVar = ""
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
+stream = ExtResource("5_lu8ki")
+autoplay = true

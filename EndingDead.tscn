@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_34g1f"]
 [ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="2_57bgq"]
 [ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="3_54txd"]
+[ext_resource type="Texture2D" uid="uid://bxkpl272glfnc" path="res://pc_survivor_dead.png" id="4_1cahu"]
+[ext_resource type="Texture2D" uid="uid://t36spyg247bj" path="res://blood_red.png" id="5_eojjc"]
 
 [node name="Control" type="Control" unique_id=1532912088]
 layout_mode = 3
@@ -41,3 +43,13 @@ vertical_alignment = 1
 stream = ExtResource("3_54txd")
 autoplay = true
 parameters/looping = false
+
+[node name="PcSurvivorDead" type="Sprite2D" parent="." unique_id=1566271437]
+z_index = 1
+position = Vector2(568, 197)
+scale = Vector2(2, 2)
+texture = ExtResource("4_1cahu")
+
+[node name="BloodRed" type="Sprite2D" parent="." unique_id=1038287542]
+position = Vector2(568, 205)
+texture = ExtResource("5_eojjc")
