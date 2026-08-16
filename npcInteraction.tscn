@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://bs1y4vad37nlh"]
 
 [ext_resource type="Texture2D" uid="uid://d4atwcy2c1sun" path="res://Sfondo1.png" id="1_mt3tr"]
-[ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="2_wiigw"]
 [ext_resource type="Script" uid="uid://b1i25fedmp084" path="res://TestButton.cs" id="3_o2o7k"]
+[ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="3_wiigw"]
+[ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="4_wadpt"]
 
 [node name="NpcInteraction" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -13,33 +14,68 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Sfondo1" type="Sprite2D" parent="." unique_id=1694345683]
-position = Vector2(579, 320.50003)
+position = Vector2(544, 308)
 scale = Vector2(0.46406248, 0.47569448)
 texture = ExtResource("1_mt3tr")
 
-[node name="Button" type="Button" parent="Sfondo1" unique_id=1267055420]
-offset_left = -1114.0741
-offset_top = 43.09481
-offset_right = 2.1549072
-offset_bottom = 232.2919
-theme_override_fonts/font = ExtResource("2_wiigw")
-text = "Dialogue 1"
+[node name="TestImage" type="Sprite2D" parent="Sfondo1" unique_id=1356396064]
+position = Vector2(-15.0841675, -392.02557)
+scale = Vector2(1.2053874, 0.28607062)
+texture = ExtResource("4_wadpt")
+
+[node name="Panel" type="Panel" parent="Sfondo1" unique_id=1263237513]
+offset_left = -846.8687
+offset_top = -170.27742
+offset_right = 907.2055
+offset_bottom = 290.10205
+
+[node name="Label" type="Label" parent="Sfondo1/Panel" unique_id=317907678]
+layout_mode = 0
+offset_right = 1749.7644
+offset_bottom = 456.1751
+theme_override_fonts/font = ExtResource("3_wiigw")
+text = "wewrbwrebrvrveavervraevaervraevg"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPanel" type="Panel" parent="Sfondo1" unique_id=529216286]
+offset_left = -846.8687
+offset_top = 321.635
+offset_right = 907.2055
+offset_bottom = 597.02185
+
+[node name="Button1" type="Button" parent="Sfondo1/ButtonPanel" unique_id=167287937]
+layout_mode = 0
+offset_left = 2.1548767
+offset_top = -6.1035156e-05
+offset_right = 1749.7644
+offset_bottom = 86.18964
+theme_override_fonts/font = ExtResource("3_wiigw")
+text = "entry 1"
 script = ExtResource("3_o2o7k")
 
-[node name="Button2" type="Button" parent="Sfondo1" unique_id=464736360]
-offset_left = -1111.9192
-offset_top = 263.8247
-offset_right = 4.3098145
-offset_bottom = 453.0218
-theme_override_fonts/font = ExtResource("2_wiigw")
-text = "Dialogue 2"
+[node name="Button2" type="Button" parent="Sfondo1/ButtonPanel" unique_id=1480581493]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.45577392
+offset_left = 2.1548767
+offset_top = 94.59851
+offset_right = 950.3031
+offset_bottom = 180.78821
+theme_override_fonts/font = ExtResource("3_wiigw")
+text = "entry 2"
 script = ExtResource("3_o2o7k")
+metadata/_edit_use_anchors_ = true
 
-[node name="Button3" type="Button" parent="Sfondo1" unique_id=2112162017]
-offset_left = -1107.6094
-offset_top = 471.94147
-offset_right = 8.619629
-offset_bottom = 661.13855
-theme_override_fonts/font = ExtResource("2_wiigw")
-text = "Dialogue 3"
+[node name="Button3" type="Button" parent="Sfondo1/ButtonPanel" unique_id=610175447]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.45577392
+offset_left = 2.1548767
+offset_top = 189.19702
+offset_right = 950.3031
+offset_bottom = 275.38672
+theme_override_fonts/font = ExtResource("3_wiigw")
+text = "entry 3"
 script = ExtResource("3_o2o7k")
+metadata/_edit_use_anchors_ = true
