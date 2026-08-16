@@ -1,0 +1,20 @@
+
+INTRODUCTION:
+The neighbors left their house unlocked. You let yourself in without a sound. The air is cloying and sour. 
+
+There's a few suitcases by the door, ready to go, but you didn't see a car in the driveway. The remains of dinner sit on the dining room table, uneaten. The fridge door hangs open - nothing edible in there, not by now - but the pantry looks unraided. A flight of stairs leads up and out of sight.
+
+You're thankful there's enough windows to see comfortably, but that means anyone outside can see you. Better work quick.
+
+OPTION: Check the pantry...
+RESULT TEXT: The neighbors didn't have much before they left, or maybe they took their nonperishables. It doesn't matter now. There's a few cans in here, and you put them in your backpack. +2 SUPPLIES
+
+OPTION: Check upstairs...
+RESULT TEXT: The bedrooms have clothing scattered over the furniture and on the floor. In the master, a safe sits open, its contents spilled out before it. Bills, papers, jewelery. Plenty of value, nothing of use. 
+
+From the second floor widow, you can see some locations of note: 
+A gas station. There's a cluster of cars abandoned near the pumps. +LOCATION
+A clinic. The front windows are shattered, but it might still hold supplies. +LOCATION
+
+ON CONTINUE BUTTON:
+- return home, consume supply. 
