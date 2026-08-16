@@ -35,6 +35,7 @@ You say nothing. He shrugs, zips his pack back up, and slings it over his should
 Along with the gifts, there's still plenty left in the room. You gather it up in a few moments. 
 +5 SUPPLIES
 +1 AMMUNITION
++FLAG BM_FRIENDLY
 
 ===
 

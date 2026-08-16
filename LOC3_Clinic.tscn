@@ -111,8 +111,8 @@ metadata/HideOnVar = ""
 
 [node name="Prose6" parent="Panel" unique_id=311857047 instance=ExtResource("4_drhwi")]
 layout_mode = 0
-offset_left = 1.0
-offset_right = 1075.0
+offset_left = 4.0
+offset_right = 1078.0
 text = "Your flashlight cuts through the darkness in a beam too thin to be comforting. You go from door to door, passing examination rooms and broom closets until you reach a space that's been turned upside down. Every cabinet has been pulled open, and cracked pill bottles and smashed first-aid kits litter the floor. At first glance, it looks hopeless, but after some searching, you find a few useful things.
 
 +3 SUPPLIES"
@@ -166,7 +166,7 @@ position = Vector2(-13.714279, 11.999997)
 texture = ExtResource("9_rbuxc")
 
 [node name="BackgroundDoorOpen" type="Sprite2D" parent="BoundingBox" unique_id=2054885520]
-position = Vector2(75.42857, 3.428566)
+position = Vector2(75.42857, 3.7142801)
 texture = ExtResource("10_muurx")
 
 [node name="BackgroundGurney" type="Sprite2D" parent="BoundingBox" unique_id=415916610]
