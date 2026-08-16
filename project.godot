@@ -17,8 +17,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Globals="*uid://hfn2v14ppxkv"
 DialogueManager="*uid://c3rodes2l3gxb"
+Globals="*uid://hfn2v14ppxkv"
 
 [dialogue_manager]
 
@@ -39,4 +39,5 @@ project/assembly_name="Unreliable_Narratation_Jam"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"

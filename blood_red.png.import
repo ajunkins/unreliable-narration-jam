@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5sywqixibb76"
-path="res://.godot/imported/background_door.png-cac4ea135d4c415eea598f4fabbbd9a3.ctex"
+uid="uid://t36spyg247bj"
+path="res://.godot/imported/blood_red.png-58098f977d94cb486b45089c85fce64a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background_door.png"
-dest_files=["res://.godot/imported/background_door.png-cac4ea135d4c415eea598f4fabbbd9a3.ctex"]
+source_file="res://blood_red.png"
+dest_files=["res://.godot/imported/blood_red.png-58098f977d94cb486b45089c85fce64a.ctex"]
 
 [params]
 

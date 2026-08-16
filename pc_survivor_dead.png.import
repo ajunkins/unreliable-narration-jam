@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5sywqixibb76"
-path="res://.godot/imported/background_door.png-cac4ea135d4c415eea598f4fabbbd9a3.ctex"
+uid="uid://bxkpl272glfnc"
+path="res://.godot/imported/pc_survivor_dead.png-62806a2b97be2b8de521e82765020619.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background_door.png"
-dest_files=["res://.godot/imported/background_door.png-cac4ea135d4c415eea598f4fabbbd9a3.ctex"]
+source_file="res://pc_survivor_dead.png"
+dest_files=["res://.godot/imported/pc_survivor_dead.png-62806a2b97be2b8de521e82765020619.ctex"]
 
 [params]
 
