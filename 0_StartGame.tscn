@@ -39,9 +39,9 @@ metadata/ResetGame = true
 visible = false
 layout_mode = 0
 offset_left = -189.0
-offset_top = 2.0
+offset_top = 7.0
 offset_right = -46.0
-offset_bottom = 65.00006
+offset_bottom = 70.00006
 text = "SoundTest"
 metadata/SceneTransition = "_SoundTest.tscn"
 
@@ -54,6 +54,17 @@ offset_bottom = 157.00006
 text = "Credits"
 metadata/SceneTransition = "0_Credits.tscn"
 metadata/ResetGame = false
+
+[node name="DayTest" parent="PlayerResponses" unique_id=870782294 instance=ExtResource("3_aepy8")]
+visible = false
+layout_mode = 0
+offset_left = -194.0
+offset_top = 91.0
+offset_right = -51.0
+offset_bottom = 154.00006
+text = "Day
+Test"
+metadata/SceneTransition = "_DayTest.tscn"
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
 layout_mode = 0
