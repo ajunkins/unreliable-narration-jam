@@ -25,6 +25,20 @@ public partial class Globals : Node
 	{
 		Globals.GetMyStoryVars().Day++;
 	}
+
+	public static void AddToSupplies(int value)
+	{
+		Globals.GetMyStoryVars().Supplies += value;
+	}
+	public static void AddToAmmo(int value)
+	{
+		Globals.GetMyStoryVars().Ammunition += value;
+	}
+
+	public static void reset()
+	{
+		Globals.GetMyStoryVars().reset();
+	}
 }
 
 public class StoryVars
@@ -55,6 +69,13 @@ public class StoryVars
 			return WorldGlobals[globalName];
 		}
 		return false;
+	}
+	public void reset()
+	{
+		Day = 0;
+		Supplies = 0;
+		Ammunition = 5;
+		WorldGlobals = new Dictionary<string, bool>();
 	}
 
 }

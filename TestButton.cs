@@ -31,6 +31,8 @@ public partial class TestButton : Button
 		NodePath path = (NodePath)GetMeta("ShowLabel", "");// on press toggle label
 		
 		bool incrementDay = (bool)GetMeta("IncrementDay","");
+		int AddSupplies = (int)GetMeta("AddSupplies",0);
+		int AddAmmo = (int)GetMeta("AddAmmo",0);
 		bool HideAfterPressed = (bool)GetMeta("HideAfterPressed","");
 		
 		//*
@@ -50,7 +52,16 @@ public partial class TestButton : Button
 		{
 			Globals.incrementDay();
 		}
-		
+
+		if (AddSupplies != 0)
+		{
+			Globals.AddToSupplies(AddSupplies);
+		}
+		if (AddAmmo != 0)
+		{
+			Globals.AddToAmmo(AddAmmo);
+		}
+
 		if (HideAfterPressed)
 		{
 			this.Visible = false;
