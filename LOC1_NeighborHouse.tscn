@@ -1,10 +1,16 @@
 [gd_scene format=3 uid="uid://esw8osti3ye4"]
 
 [ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_qcy86"]
-[ext_resource type="Texture2D" uid="uid://dlcs4ic2x4b8u" path="res://testImage.png" id="2_vauky"]
+[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="2_fdjwg"]
 [ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_isec6"]
+[ext_resource type="Texture2D" uid="uid://lgp8bcprfhn5" path="res://sprites/background_chair_2.png" id="3_qlqij"]
 [ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_h6psl"]
+[ext_resource type="Texture2D" uid="uid://5anry86opiij" path="res://sprites/background_stairs.png" id="4_oxtgm"]
+[ext_resource type="Texture2D" uid="uid://buvx3bndybsg8" path="res://sprites/background_crate.png" id="5_2a3e1"]
 [ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_lu8ki"]
+[ext_resource type="Texture2D" uid="uid://bx4pgykis873c" path="res://sprites/background_suitcases.png" id="6_egv2k"]
+[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="7_dmxtl"]
+[ext_resource type="Texture2D" uid="uid://7lss5ny6u3wt" path="res://sprites/background_chair_1.png" id="8_dkw3n"]
 
 [node name="NpcInteraction" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -19,10 +25,56 @@ position = Vector2(577, 321)
 scale = Vector2(2.7122643, 2.0445862)
 texture = ExtResource("1_qcy86")
 
-[node name="TestImage" type="Sprite2D" parent="." unique_id=1356396064]
-position = Vector2(576, 113)
-scale = Vector2(0.55937505, 0.13608222)
-texture = ExtResource("2_vauky")
+[node name="BoundingBox" type="Sprite2D" parent="." unique_id=2100640328]
+texture_filter = 1
+position = Vector2(580.00006, 134)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("2_fdjwg")
+
+[node name="BackgroundChair2" type="Sprite2D" parent="BoundingBox" unique_id=2112720326]
+position = Vector2(22.285694, 14.571425)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("3_qlqij")
+
+[node name="BackgroundStairs" type="Sprite2D" parent="BoundingBox" unique_id=1039453246]
+position = Vector2(74.85712, 7.42857)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("4_oxtgm")
+
+[node name="BackgroundCrate" type="Sprite2D" parent="BoundingBox" unique_id=809554477]
+position = Vector2(-18.571444, 5.7142844)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("5_2a3e1")
+
+[node name="BackgroundCrate2" type="Sprite2D" parent="BoundingBox" unique_id=930255253]
+position = Vector2(-18.571444, 14.571427)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("5_2a3e1")
+
+[node name="BackgroundCrate3" type="Sprite2D" parent="BoundingBox" unique_id=1881383767]
+position = Vector2(-12.785729, 5.7142844)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("5_2a3e1")
+
+[node name="BackgroundCrate4" type="Sprite2D" parent="BoundingBox" unique_id=535931209]
+position = Vector2(-12.785729, 14.571427)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("5_2a3e1")
+
+[node name="BackgroundSuitcases" type="Sprite2D" parent="BoundingBox" unique_id=1862809757]
+position = Vector2(-56.857166, 14.000004)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("6_egv2k")
+
+[node name="PcSurvivor" type="Sprite2D" parent="BoundingBox" unique_id=1092487278]
+position = Vector2(-72.000015, 10.571426)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("7_dmxtl")
+
+[node name="BackgroundChair1" type="Sprite2D" parent="BoundingBox" unique_id=726637027]
+position = Vector2(40.857124, 15.999998)
+rotation = 4.712389
+texture = ExtResource("8_dkw3n")
 
 [node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
 layout_mode = 0
