@@ -81,7 +81,7 @@ offset_left = 768.0
 offset_top = 299.0
 offset_right = 904.0
 offset_bottom = 362.00006
-text = "Alleyway"
+text = "Alleyway (2 supplies)"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC5_Alleyway.tscn"
 
