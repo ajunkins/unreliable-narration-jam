@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_cwyka"]
 [ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="2_03vak"]
 [ext_resource type="AudioStream" uid="uid://dpij54b17eicw" path="res://sounds/old city theme.ogg" id="3_cno5h"]
+[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="4_03vak"]
 
 [node name="Control" type="Control" unique_id=1532912088]
 layout_mode = 3
@@ -19,9 +20,10 @@ texture = ExtResource("1_cwyka")
 
 [node name="Label" type="Label" parent="." unique_id=507484513]
 layout_mode = 0
-offset_left = 1.0
-offset_right = 1153.0
-offset_bottom = 324.0
+offset_left = 8.0
+offset_top = -96.0
+offset_right = 1160.0
+offset_bottom = 228.0
 theme_override_fonts/font = ExtResource("2_03vak")
 theme_override_font_sizes/font_size = 19
 text = "You wake to the sound of engines.
@@ -66,10 +68,10 @@ autowrap_mode = 3
 
 [node name="Label2" type="Label" parent="." unique_id=1003001388]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 289.0
-offset_right = 1153.0
-offset_bottom = 613.0
+offset_left = 8.0
+offset_top = 232.0
+offset_right = 1160.0
+offset_bottom = 556.0
 theme_override_fonts/font = ExtResource("2_03vak")
 theme_override_font_sizes/font_size = 19
 text = "The guidebook didn't mention anything about this.
@@ -85,3 +87,13 @@ autowrap_mode = 3
 stream = ExtResource("3_cno5h")
 autoplay = true
 parameters/looping = false
+
+[node name="Response_Credits" parent="." unique_id=769636508 instance=ExtResource("4_03vak")]
+layout_mode = 0
+offset_left = 245.0
+offset_top = 569.0
+offset_right = 934.8451
+offset_bottom = 632.00006
+text = "Credits"
+metadata/SceneTransition = "0_Credits.tscn"
+metadata/ResetGame = false

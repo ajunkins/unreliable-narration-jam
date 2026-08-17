@@ -92,6 +92,7 @@ offset_bottom = 76.00006
 text = "Check the pantry"
 metadata/SceneTransition = "LOC1_NeighborHouse_2.tscn"
 metadata/SetGlobal = "LOC2_gas_station"
+metadata/AddSupplies = 2
 
 [node name="ResponseBase2" parent="PlayerResponses2" unique_id=23475542 instance=ExtResource("3_isec6")]
 layout_mode = 0

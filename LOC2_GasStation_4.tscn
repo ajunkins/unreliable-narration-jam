@@ -197,7 +197,7 @@ offset_bottom = 19.0
 text = "You can't risk him following you. You drop what little food and water you found on the floor and back away. His eyes follow you all the way out the door. Its another few steps before you aren't able to smell him anymore.
 
 You try not consider the fact that you need those supplies as much as anyone.
-+FLAG BM_LOC2_SUPPLIES_GIVEN"
+"
 autowrap_mode = 3
 metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""

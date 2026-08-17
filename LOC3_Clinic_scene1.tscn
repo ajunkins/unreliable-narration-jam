@@ -40,7 +40,6 @@ offset_right = 689.8451
 offset_bottom = 76.00006
 text = "Check the front desk"
 metadata/SceneTransition = "LOC3_Clinic_scene2.tscn"
-metadata/HideLabel = NodePath("../../Panel/Prose1")
 
 [node name="ResponseBase2" parent="PlayerResponses" unique_id=145729705 instance=ExtResource("2_hskp6")]
 layout_mode = 0
@@ -50,7 +49,6 @@ offset_right = 689.8451
 offset_bottom = 133.00006
 text = "Check the back rooms"
 metadata/SceneTransition = "LOC3_Clinic_scene3.tscn"
-metadata/HideLabel = NodePath("../../Panel/Prose1")
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
 layout_mode = 0

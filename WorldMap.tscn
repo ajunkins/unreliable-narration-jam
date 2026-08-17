@@ -73,7 +73,7 @@ offset_bottom = 322.00006
 text = "Clinic 
 (-2 supplies)"
 icon = ExtResource("4_37m1j")
-metadata/SceneTransition = "LOC3_Clinic.tscn"
+metadata/SceneTransition = "LOC3_Clinic_scene1.tscn"
 metadata/ShowOnVar = "LOC3_clinic"
 
 [node name="Phase3" type="Control" parent="." unique_id=244947179]
@@ -91,7 +91,7 @@ offset_bottom = 362.00006
 text = "Alleyway 
 (-2 supplies)"
 icon = ExtResource("4_37m1j")
-metadata/SceneTransition = "LOC5_Alleyway.tscn"
+metadata/SceneTransition = "LOC5_Alleyway_scene1.tscn"
 metadata/ShowOnVar = "add_alleyway"
 
 [node name="Phase4" type="Control" parent="." unique_id=991134156]
@@ -108,7 +108,7 @@ offset_right = 1082.0
 offset_bottom = 205.00006
 text = "Nice House (-3 supplies)"
 icon = ExtResource("4_37m1j")
-metadata/SceneTransition = "LOC7_NiceHouse.tscn"
+metadata/SceneTransition = "LOC7_NiceHouse_scene1.tscn"
 
 [node name="GroceryStore" parent="Phase4" unique_id=843582130 instance=ExtResource("3_37m1j")]
 visible = false

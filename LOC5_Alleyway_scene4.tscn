@@ -92,8 +92,8 @@ offset_bottom = 396.0
 layout_mode = 0
 text = "As you walk home, you notice a few locations that may be worth your time.
 
-+LOC7_nice_home
-+LOC9_grocery_store"
+A nice looking home.
+A grocery store."
 metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""

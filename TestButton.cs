@@ -9,7 +9,7 @@ public partial class TestButton : Button
 	{	
 		// Called when the node enters the scene tree for the first time.
 		this.Pressed += ButtonPressed;
-		GD.Print("Button test");
+		//GD.Print("Button test");
 		
 		this.MetaVarsUpdate();// do all the updating based on vars
 
@@ -41,6 +41,14 @@ public partial class TestButton : Button
 		
 		AudioStream sound = (AudioStream)GetMeta("PlaySound",false);
 		
+
+		bool Exit = (bool)GetMeta("ExitGame",false);
+
+		if (Exit)
+		{
+			GD.Print("Exiting game...");	
+			GetTree().Quit(); // Cleanly quit the game
+		}
 
 		if (sound != null)
 		{
@@ -115,6 +123,12 @@ public partial class TestButton : Button
 	/// </summary>
 	public void MetaVarsUpdate()
 	{
+		//show on day
+		int ShowOnDay = (int)GetMeta("ShowOnDay",-1);
+		if (Globals.GetMyStoryVars().Day == ShowOnDay)
+		{
+			this.Visible = true;
+		}
 
 		//show on var//todo test
 		string ShowOnVar = (string)GetMeta("ShowOnVar","");
@@ -123,7 +137,6 @@ public partial class TestButton : Button
 			if (Globals.GetMyStoryVars().GetGlobal(ShowOnVar))
 			{
 				this.Visible = true;
-
 			}
 
 		}
@@ -131,16 +144,10 @@ public partial class TestButton : Button
 		string HideOnVar = (string)GetMeta("HideOnVar","");
 		if (Globals.GetMyStoryVars().GetGlobal(ShowOnVar))
 		{
-			this.Visible = true;
+			this.Visible = false;
 
 		}
 		
-		//show on day
-		int ShowOnDay = (int)GetMeta("ShowOnDay",-1);
-		if (Globals.GetMyStoryVars().Day == ShowOnDay)
-		{
-			this.Visible = true;
 
-		}
 	}
 }

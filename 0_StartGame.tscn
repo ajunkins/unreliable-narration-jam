@@ -50,11 +50,21 @@ metadata/SceneTransition = "_SoundTest.tscn"
 layout_mode = 0
 offset_left = 0.0
 offset_top = 94.0
-offset_right = 689.8451
+offset_right = 322.0
 offset_bottom = 157.00006
 text = "Credits"
 metadata/SceneTransition = "0_Credits.tscn"
 metadata/ResetGame = false
+
+[node name="Response_Credits" parent="PlayerResponses/Response_Credits" unique_id=1549771782 instance=ExtResource("3_aepy8")]
+layout_mode = 0
+offset_left = 338.0
+offset_top = -1.0
+offset_right = 660.0
+offset_bottom = 62.00006
+text = "Exit"
+metadata/ResetGame = false
+metadata/ExitGame = true
 
 [node name="DayTest" parent="PlayerResponses" unique_id=870782294 instance=ExtResource("3_aepy8")]
 visible = false

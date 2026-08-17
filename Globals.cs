@@ -60,10 +60,13 @@ public class StoryVars
 		{
 			WorldGlobals.Add(globalName, value);
 		}
+
+		dump();
 	}
 
 	public bool GetGlobal(string globalName)
 	{
+		dump();
 		if (WorldGlobals.ContainsKey(globalName))
 		{
 			return WorldGlobals[globalName];
@@ -73,9 +76,20 @@ public class StoryVars
 	public void reset()
 	{
 		Day = 0;
-		Supplies = 0;
+		Supplies = 7;
 		Ammunition = 5;
 		WorldGlobals = new Dictionary<string, bool>();
+	}
+
+	public void dump()
+	{
+		GD.Print("globals path");
+		
+		foreach (string key in WorldGlobals.Keys)
+		{
+			GD.Print(key+" = "+ (WorldGlobals[key] ? "True" : "False"));
+		}
+
 	}
 
 }
