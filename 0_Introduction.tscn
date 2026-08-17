@@ -32,6 +32,7 @@ offset_top = 61.0
 offset_right = 686.8451
 offset_bottom = 124.00006
 text = "CONTINUE"
+metadata/SceneTransition = "LOC0_Home.tscn"
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
 layout_mode = 0

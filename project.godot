@@ -14,6 +14,7 @@ config/name="Unreliable_Narratation_Jam"
 run/main_scene="uid://de1ypawj2l82c"
 config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+run/canvas_textures/default_texture_filter=1
 
 [autoload]
 

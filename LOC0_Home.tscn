@@ -122,6 +122,7 @@ offset_top = 13.0
 offset_right = 689.8451
 offset_bottom = 76.00006
 text = "venture outside"
+metadata/SceneTransition = "WorldMap.tscn"
 
 [node name="ResponseBase2" parent="PlayerResponses2" unique_id=23475542 instance=ExtResource("9_824id")]
 visible = false
@@ -161,54 +162,36 @@ visible = false
 layout_mode = 0
 text = "The guidebook says:
 \"Survival tip 6: Never leave your shelter unless you're adequately defended.\""
-metadata/SetAsOverrideLabel = ""
-metadata/ShowOnVar = ""
-metadata/HideOnVar = ""
 
 [node name="Prose3" parent="Panel" unique_id=239388314 instance=ExtResource("10_u5ig0")]
 visible = false
 layout_mode = 0
 text = "The guidebook says:
 \"Survival tip 4: Never let your guard down around a stranger. Your own well-being is top priority.\""
-metadata/SetAsOverrideLabel = ""
-metadata/ShowOnVar = ""
-metadata/HideOnVar = ""
 
 [node name="Prose4" parent="Panel" unique_id=1512818592 instance=ExtResource("10_u5ig0")]
 visible = false
 layout_mode = 0
 text = "The guidebook says:
 \"Survival tip 12: Under no circumstances should you accept the word of a stranger. 99% of attacks come from unknown individuals. \" "
-metadata/SetAsOverrideLabel = ""
-metadata/ShowOnVar = ""
-metadata/HideOnVar = ""
 
 [node name="Prose5" parent="Panel" unique_id=86556736 instance=ExtResource("10_u5ig0")]
 visible = false
 layout_mode = 0
 text = "The guidebook says:
 \"Survival tip 15: In extreme cases, where survival is questionable, cannibalism is encouraged.\"  "
-metadata/SetAsOverrideLabel = ""
-metadata/ShowOnVar = ""
-metadata/HideOnVar = ""
 
 [node name="Prose6" parent="Panel" unique_id=1336473418 instance=ExtResource("10_u5ig0")]
 visible = false
 layout_mode = 0
 text = "The guidebook says:
 \"Survival tip 42: Larger individuals may take multiple rounds to subdue. Always make sure your target has been killed.\""
-metadata/SetAsOverrideLabel = ""
-metadata/ShowOnVar = ""
-metadata/HideOnVar = ""
 
 [node name="Prose7" parent="Panel" unique_id=1482133839 instance=ExtResource("10_u5ig0")]
 visible = false
 layout_mode = 0
 text = "The guidebook says:
 \"Survival tip 55: They're lying to you. You know it. I know it.\" "
-metadata/SetAsOverrideLabel = ""
-metadata/ShowOnVar = ""
-metadata/HideOnVar = ""
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
 stream = ExtResource("11_pov2w")

@@ -21,3 +21,4 @@ metadata/AddAmmo = 0
 metadata/HideAfterPressed = true
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
+metadata/HideLabel = NodePath("")
