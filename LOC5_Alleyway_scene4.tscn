@@ -78,6 +78,7 @@ offset_right = 689.8451
 offset_bottom = 76.00006
 text = "- return home, consume supply. "
 metadata/SceneTransition = "LOC0_Home.tscn"
+metadata/IncrementDay = true
 metadata/AddSupplies = -2
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
