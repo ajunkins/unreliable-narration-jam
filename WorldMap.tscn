@@ -40,7 +40,8 @@ offset_left = 549.0
 offset_top = 396.0
 offset_right = 765.0
 offset_bottom = 459.00006
-text = "Neighbor's House"
+text = "Neighbor's House
+(-1 supplies)"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC1_NeighborHouse.tscn"
 
@@ -50,12 +51,14 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="GasStation" parent="Phase2" unique_id=958141909 instance=ExtResource("3_37m1j")]
+visible = false
 layout_mode = 0
 offset_left = 687.0
 offset_top = 447.0
 offset_right = 857.0
 offset_bottom = 510.00006
-text = "Gas Station"
+text = "Gas Station
+(-2 supplies)"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC2_GasStation.tscn"
 metadata/ShowOnVar = "LOC2_gas_station"
@@ -63,11 +66,12 @@ metadata/ShowOnVar = "LOC2_gas_station"
 [node name="Clinic" parent="Phase2" unique_id=1638276249 instance=ExtResource("3_37m1j")]
 visible = false
 layout_mode = 0
-offset_left = 679.0
-offset_top = 215.0
-offset_right = 787.0
-offset_bottom = 278.00006
-text = "Clinic (-2 supplies)"
+offset_left = 398.0
+offset_top = 259.0
+offset_right = 578.0
+offset_bottom = 322.00006
+text = "Clinic 
+(-2 supplies)"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC3_Clinic.tscn"
 metadata/ShowOnVar = "LOC3_clinic"
@@ -84,7 +88,8 @@ offset_left = 768.0
 offset_top = 299.0
 offset_right = 904.0
 offset_bottom = 362.00006
-text = "Alleyway (-2 supplies)"
+text = "Alleyway 
+(-2 supplies)"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC5_Alleyway.tscn"
 metadata/ShowOnVar = "add_alleyway"
@@ -95,22 +100,25 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="NiceHouse" parent="Phase4" unique_id=488514450 instance=ExtResource("3_37m1j")]
+visible = false
 layout_mode = 0
-offset_left = 713.0
-offset_top = 166.0
-offset_right = 873.0
-offset_bottom = 229.00006
+offset_left = 798.0
+offset_top = 142.0
+offset_right = 1082.0
+offset_bottom = 205.00006
 text = "Nice House (-3 supplies)"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC7_NiceHouse.tscn"
 
-[node name="ResponseBase" parent="Phase4" unique_id=843582130 instance=ExtResource("3_37m1j")]
+[node name="GroceryStore" parent="Phase4" unique_id=843582130 instance=ExtResource("3_37m1j")]
+visible = false
 layout_mode = 0
-offset_left = 491.0
-offset_top = 136.0
-offset_right = 687.0
-offset_bottom = 199.00006
-text = "Grocery Store"
+offset_left = 54.0
+offset_top = 74.0
+offset_right = 250.0
+offset_bottom = 137.00006
+text = "Grocery Store
+(-5 supplies)"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC9_GroceryStore.tscn"
 
@@ -121,15 +129,18 @@ offset_top = 67.0
 offset_right = 565.0
 offset_bottom = 107.0
 
-[node name="ResponseBase" parent="Phase5" unique_id=1451279102 instance=ExtResource("3_37m1j")]
+[node name="Hospital" parent="Phase5" unique_id=1451279102 instance=ExtResource("3_37m1j")]
+visible = false
 layout_mode = 0
-offset_left = -302.0
-offset_top = 7.0
-offset_right = -168.0
-offset_bottom = 70.00006
-text = "Hospital"
+offset_left = 453.0
+offset_top = 478.0
+offset_right = 587.0
+offset_bottom = 541.00006
+text = "Hospital
+(-5 supplies)"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC13_Hospital.tscn"
+metadata/ShowOnVar = "LOC13_hospital"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1877171222]
 stream = ExtResource("5_x5pqh")
