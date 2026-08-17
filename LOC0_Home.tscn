@@ -124,24 +124,6 @@ offset_bottom = 76.00006
 text = "venture outside"
 metadata/SceneTransition = "WorldMap.tscn"
 
-[node name="ResponseBase2" parent="PlayerResponses2" unique_id=23475542 instance=ExtResource("9_824id")]
-visible = false
-layout_mode = 0
-offset_left = 0.0
-offset_top = 70.0
-offset_right = 689.8451
-offset_bottom = 133.00006
-text = "Check upstairs..."
-
-[node name="ResponseBase3" parent="PlayerResponses2" unique_id=1499572783 instance=ExtResource("9_824id")]
-visible = false
-layout_mode = 0
-offset_left = 0.0
-offset_top = 125.0
-offset_right = 689.8451
-offset_bottom = 188.00006
-text = "dont say you aren't spoiled for choice"
-
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
 layout_mode = 0
 offset_left = 39.0
