@@ -1,15 +1,15 @@
-[gd_scene format=3 uid="uid://cox6ffqa711kn"]
+[gd_scene format=3 uid="uid://u1mxmbpfx2ol"]
 
-[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_kx516"]
-[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_wxftv"]
-[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_8yvdc"]
-[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="5_38frc"]
-[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_gnata"]
-[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="6_jht2i"]
-[ext_resource type="Texture2D" uid="uid://ickgbgsstjxm" path="res://sprites/crate.png" id="7_opso1"]
-[ext_resource type="Texture2D" uid="uid://5sywqixibb76" path="res://sprites/background_door.png" id="9_3swi1"]
-[ext_resource type="Texture2D" uid="uid://c3xqvq3hn3dmx" path="res://sprites/background_door_open.png" id="10_5gpct"]
-[ext_resource type="Texture2D" uid="uid://cnnorcdhsr1jv" path="res://sprites/background_gurney.png" id="11_u5guy"]
+[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_i4jtn"]
+[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="2_8p134"]
+[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="3_fn0j1"]
+[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="4_bamt0"]
+[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="5_gxbwe"]
+[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="6_fftrv"]
+[ext_resource type="Texture2D" uid="uid://ickgbgsstjxm" path="res://sprites/crate.png" id="7_igb47"]
+[ext_resource type="Texture2D" uid="uid://5sywqixibb76" path="res://sprites/background_door.png" id="9_cx34l"]
+[ext_resource type="Texture2D" uid="uid://c3xqvq3hn3dmx" path="res://sprites/background_door_open.png" id="10_7kvoj"]
+[ext_resource type="Texture2D" uid="uid://cnnorcdhsr1jv" path="res://sprites/background_gurney.png" id="11_8ljeb"]
 
 [node name="NpcInteraction" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -22,41 +22,45 @@ grow_vertical = 2
 [node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=350363733]
 position = Vector2(577, 321)
 scale = Vector2(2.7122643, 2.0445862)
-texture = ExtResource("1_kx516")
+texture = ExtResource("1_i4jtn")
 
 [node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
+visible = false
 layout_mode = 0
 offset_left = 238.0
 offset_top = 418.0
 offset_right = 928.0
 offset_bottom = 611.0
 
-[node name="ResponseBase" parent="PlayerResponses" unique_id=769636508 instance=ExtResource("3_wxftv")]
+[node name="PositiveButton" parent="PlayerResponses" unique_id=769636508 instance=ExtResource("2_8p134")]
 layout_mode = 0
 offset_left = 0.0
 offset_top = 13.0
 offset_right = 689.8451
 offset_bottom = 76.00006
-text = "Search the ER for supplies."
-metadata/SceneTransition = "LOC13_Hospital_2.tscn"
+text = "Go inside"
+metadata/ShowOnVar = "BM__LOC2_SUPPLIES_GIVEN"
 
-[node name="ResponseBase2" parent="PlayerResponses" unique_id=145729705 instance=ExtResource("3_wxftv")]
-visible = false
+[node name="NegativeButton" parent="PlayerResponses" unique_id=145729705 instance=ExtResource("2_8p134")]
 layout_mode = 0
 offset_left = 0.0
 offset_top = 70.0
 offset_right = 689.8451
 offset_bottom = 133.00006
-text = "This button does something else"
+text = "Go inside
+"
 
-[node name="ResponseBase3" parent="PlayerResponses" unique_id=2034856569 instance=ExtResource("3_wxftv")]
-visible = false
+[node name="NeutralButton" parent="." unique_id=2034856569 instance=ExtResource("2_8p134")]
 layout_mode = 0
-offset_left = 0.0
-offset_top = 125.0
-offset_right = 689.8451
-offset_bottom = 188.00006
-text = "dont say you aren't spoiled for choice"
+offset_left = 238.0
+offset_top = 473.0
+offset_right = 927.8451
+offset_bottom = 536.00006
+text = "Return home, consume supply
+"
+metadata/SceneTransition = "LOC0_Home.tscn"
+metadata/TestGlobal = "BM_FRIENDLY"
+metadata/AddSupplies = -2
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
 layout_mode = 0
@@ -65,21 +69,18 @@ offset_top = 216.0
 offset_right = 1113.0
 offset_bottom = 396.0
 
-[node name="Prose1" parent="Panel" unique_id=250299459 instance=ExtResource("4_8yvdc")]
+[node name="Prose1" parent="Panel" unique_id=250299459 instance=ExtResource("3_fn0j1")]
 layout_mode = 0
 offset_top = 14.0
 offset_bottom = 194.0
-text = "The hospital is a nightmare. The roads around are flooded with abandoned cars, packed so tightly together that you need to clamber over hoods to get to the front entrance.
-
-The inside is even worse. Gurneys clutter the emergency bay. Gowns, coats, and sullied clothing sit in darkened piles placed seemingly at random. Where it isn't occupied by abandoned belongings, the floor is smeared with now-browned footprints.
-
-The further you walk from the light of the entrance, the more unnerved you get. Still, the guidebook is clear - if you want to survive, you're going to need the medical supplies hiding within."
+text = "The supply room has been drained of most things useful, clearly of prime importance a few days ago. Still, there's plenty left that you can use. You gather it up in a few moments. 
++3 SUPPLIES"
 autowrap_mode = 3
 metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose2" parent="Panel" unique_id=417363165 instance=ExtResource("4_8yvdc")]
+[node name="Prose2" parent="Panel" unique_id=417363165 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "The inside is even worse. Gurneys clutter the emergency bay. Gowns, coats, and sullied clothing sit in darkened piles placed seemingly at random. Where it isn't occupied by abandoned belongings, the floor is smeared with now-browned footprints."
@@ -88,7 +89,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose3" parent="Panel" unique_id=1608354095 instance=ExtResource("4_8yvdc")]
+[node name="Prose3" parent="Panel" unique_id=1608354095 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "The further you walk from the light of the entrance, the more unnerved you get. Still, the guidebook is clear - if you want to survive, you're going to need the medical supplies hiding within."
@@ -97,7 +98,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose4" parent="Panel" unique_id=1247207066 instance=ExtResource("4_8yvdc")]
+[node name="Prose4" parent="Panel" unique_id=1247207066 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "Though it at first seems chaotic, you find the room where the EMTs were keeping their triage supplies. Much of it is worked through, the plastic bins emptied and stacked in a corner and filled with used plastic wrapping. There's an unopened bin in the back, though, and when you crack it open, you find a treasure trove: water, bandages, saline, even a few MREs. The guidebook is right again. "
@@ -106,7 +107,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose5" parent="Panel" unique_id=1454348099 instance=ExtResource("4_8yvdc")]
+[node name="Prose5" parent="Panel" unique_id=1454348099 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "It doesn't take you long to pack. As you do, you wonder why it was left behind.
@@ -116,7 +117,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose6" parent="Panel" unique_id=1497739965 instance=ExtResource("4_8yvdc")]
+[node name="Prose6" parent="Panel" unique_id=1497739965 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "You venture further into the hospital, leaving the light of the ER windows behind. Much of the rest of the hospital is either the same - a chaotic mess of sullied medical equipment - or curiously empty, clean, and scoured of anything useful at all."
@@ -125,7 +126,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose7" parent="Panel" unique_id=508708523 instance=ExtResource("4_8yvdc")]
+[node name="Prose7" parent="Panel" unique_id=508708523 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "The windowless halls in the bowels of the hospital are oppressively dark, and you only have your flashlight for company. On the third floor, though, you see signs pointing to a supply room, clearly written in a hurry and meant for whatever staff remained. You follow the signs to what looks like a supply closet. It's unlocked."
@@ -134,7 +135,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose8" parent="Panel" unique_id=79904484 instance=ExtResource("4_8yvdc")]
+[node name="Prose8" parent="Panel" unique_id=79904484 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "IF FLAG BM_LOC2_SUPPLIES_GIVEN AND FLAG BM_LOC9_SUPPLIES_GIVEN
@@ -144,7 +145,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose9" parent="Panel" unique_id=764127425 instance=ExtResource("4_8yvdc")]
+[node name="Prose9" parent="Panel" unique_id=764127425 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "The bearded man stands in the middle of the supply room. His backpack sits open at his feet, nearly overflowing with white plastic pill bottles.  He huffs out a tired laugh and gives you a weak grin. \"Didn't expect anyone to find me in here.\"
@@ -154,7 +155,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose10" parent="Panel" unique_id=1975468985 instance=ExtResource("4_8yvdc")]
+[node name="Prose10" parent="Panel" unique_id=1975468985 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "You consider reaching for your pistol, but he has you dead to rights. He's still got that machete, and he could easily close the distance between you. You kick yourself for not following the guidebook to the letter. "
@@ -163,7 +164,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose11" parent="Panel" unique_id=1728472409 instance=ExtResource("4_8yvdc")]
+[node name="Prose11" parent="Panel" unique_id=1728472409 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "\"Listen, there's plenty left. In fact - here.\" He kneels down, setting the machete on the tiles to reach into his bag. He removes a few bags of junk food, a can or two, and a bottle of water... as well as a few glittering brass cartridges."
@@ -172,7 +173,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose12" parent="Panel" unique_id=697370813 instance=ExtResource("4_8yvdc")]
+[node name="Prose12" parent="Panel" unique_id=697370813 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "\"I've been meaning to pay you back, you know,\" he said. \"You helped me more than you know.\""
@@ -180,7 +181,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose13" parent="Panel" unique_id=396211830 instance=ExtResource("4_8yvdc")]
+[node name="Prose13" parent="Panel" unique_id=396211830 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "You say nothing. He shrugs, zips his pack back up, and slings it over his shoulder. You numbly step aside to let him pass."
@@ -188,7 +189,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose14" parent="Panel" unique_id=657003201 instance=ExtResource("4_8yvdc")]
+[node name="Prose14" parent="Panel" unique_id=657003201 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "Along with the gifts, there's still plenty left in the room. You gather it up in a few moments.
@@ -199,7 +200,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose15" parent="Panel" unique_id=917064482 instance=ExtResource("4_8yvdc")]
+[node name="Prose15" parent="Panel" unique_id=917064482 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "IF FLAG BM_LOC2_SUPPLIES_GIVEN OR FLAG BM_LOC9_SUPPLIES_GIVEN
@@ -209,7 +210,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose16" parent="Panel" unique_id=2089470070 instance=ExtResource("4_8yvdc")]
+[node name="Prose16" parent="Panel" unique_id=2089470070 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "The bearded man stands in the middle of the supply room. His backpack sits open at his feet, nearly overflowing with white plastic pill bottles. He gives you a hard stare. \"Figures you'd show up here.\""
@@ -218,7 +219,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose17" parent="Panel" unique_id=1366657762 instance=ExtResource("4_8yvdc")]
+[node name="Prose17" parent="Panel" unique_id=1366657762 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "You consider reaching for your pistol, but he has you dead to rights. He's still got that machete, and he could easily close the distance between you. You kick yourself for not following the guidebook to the letter. "
@@ -227,7 +228,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose18" parent="Panel" unique_id=2060008152 instance=ExtResource("4_8yvdc")]
+[node name="Prose18" parent="Panel" unique_id=2060008152 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "\"Listen, there's plenty left. No need to do anything insane again.\" He deftly zips up his bag and slings it onto his back, keeping his machete in hand the whole time."
@@ -236,7 +237,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose19" parent="Panel" unique_id=1991823394 instance=ExtResource("4_8yvdc")]
+[node name="Prose19" parent="Panel" unique_id=1991823394 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "You stare at each other for a moment."
@@ -244,7 +245,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose20" parent="Panel" unique_id=1639586972 instance=ExtResource("4_8yvdc")]
+[node name="Prose20" parent="Panel" unique_id=1639586972 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "\"I'm going to leave now,\" he says. You don't have much of a choice, here, and numbly step aside to let him pass. "
@@ -252,7 +253,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose21" parent="Panel" unique_id=933606193 instance=ExtResource("4_8yvdc")]
+[node name="Prose21" parent="Panel" unique_id=933606193 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "There's still plenty left in the room. You gather it up in a few moments.
@@ -262,7 +263,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose22" parent="Panel" unique_id=520128000 instance=ExtResource("4_8yvdc")]
+[node name="Prose22" parent="Panel" unique_id=520128000 instance=ExtResource("3_fn0j1")]
 visible = false
 layout_mode = 0
 text = "The supply room has been drained of most things useful, clearly of prime importance a few days ago. Still, there's plenty left that you can use. You gather it up in a few moments.
@@ -274,63 +275,63 @@ metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
-stream = ExtResource("5_gnata")
+stream = ExtResource("4_bamt0")
 autoplay = true
 
 [node name="BoundingBox" type="Sprite2D" parent="." unique_id=308090022]
 texture_filter = 1
 position = Vector2(580.00006, 134)
 scale = Vector2(3.5, 3.5)
-texture = ExtResource("5_38frc")
+texture = ExtResource("5_gxbwe")
 
 [node name="PcSurvivor" type="Sprite2D" parent="BoundingBox" unique_id=652740797]
 position = Vector2(3.714264, 12.285711)
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("6_jht2i")
+texture = ExtResource("6_fftrv")
 
 [node name="Crate" type="Sprite2D" parent="BoundingBox" unique_id=623712031]
 position = Vector2(-75.35716, 15.857142)
 rotation = 1.5707964
 scale = Vector2(-1, 1)
-texture = ExtResource("7_opso1")
+texture = ExtResource("7_igb47")
 
 [node name="Crate2" type="Sprite2D" parent="BoundingBox" unique_id=438277000]
 position = Vector2(89.714264, 16.857141)
 rotation = 1.5707964
 scale = Vector2(-1, 1)
-texture = ExtResource("7_opso1")
+texture = ExtResource("7_igb47")
 
 [node name="Crate3" type="Sprite2D" parent="BoundingBox" unique_id=1804685982]
 position = Vector2(-83.642876, 15.857142)
 scale = Vector2(-1, 1)
-texture = ExtResource("7_opso1")
+texture = ExtResource("7_igb47")
 
 [node name="BackgroundDoor" type="Sprite2D" parent="BoundingBox" unique_id=1563927923]
 position = Vector2(-51.35716, 3.714285)
-texture = ExtResource("9_3swi1")
+texture = ExtResource("9_cx34l")
 
 [node name="BackgroundDoor2" type="Sprite2D" parent="BoundingBox" unique_id=1796369439]
 position = Vector2(-28.571445, 3.714285)
-texture = ExtResource("9_3swi1")
+texture = ExtResource("9_cx34l")
 
 [node name="BackgroundDoorOpen" type="Sprite2D" parent="BoundingBox" unique_id=191312861]
 position = Vector2(73.999985, 4.285716)
-texture = ExtResource("10_5gpct")
+texture = ExtResource("10_7kvoj")
 
 [node name="BackgroundGurney" type="Sprite2D" parent="BoundingBox" unique_id=1546971632]
 position = Vector2(21.42855, 12.857143)
-texture = ExtResource("11_u5guy")
+texture = ExtResource("11_8ljeb")
 
 [node name="BackgroundGurney2" type="Sprite2D" parent="BoundingBox" unique_id=1043227961]
 position = Vector2(-53.714302, 17.428572)
-texture = ExtResource("11_u5guy")
+texture = ExtResource("11_8ljeb")
 
 [node name="BackgroundGurney3" type="Sprite2D" parent="BoundingBox" unique_id=697746107]
 position = Vector2(64.28569, 16.571428)
 scale = Vector2(-1, 1)
-texture = ExtResource("11_u5guy")
+texture = ExtResource("11_8ljeb")
 
 [node name="BackgroundGurney4" type="Sprite2D" parent="BoundingBox" unique_id=1669276557]
 position = Vector2(-28.57145, 12.857143)
 scale = Vector2(-1, 1)
-texture = ExtResource("11_u5guy")
+texture = ExtResource("11_8ljeb")

@@ -122,6 +122,7 @@ offset_right = 565.0
 offset_bottom = 107.0
 
 [node name="ResponseBase" parent="Phase5" unique_id=1451279102 instance=ExtResource("3_37m1j")]
+visible = false
 layout_mode = 0
 offset_left = -302.0
 offset_top = 7.0
@@ -130,6 +131,7 @@ offset_bottom = 70.00006
 text = "Hospital"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC13_Hospital.tscn"
+metadata/ShowOnVar = "LOC13_hospital"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1877171222]
 stream = ExtResource("5_x5pqh")
