@@ -60,42 +60,20 @@ public partial class TestButton : Button
 //show label
 		if (path.ToString() != "")
 		{
-			Label ShowLabel = (Label)GetNode(path);
+			CanvasItem ShowLabel = (CanvasItem)GetNode(path);
 			if (ShowLabel != null)
 			{
 				ShowLabel.Visible = true; //!ShowLabel.Visible;
 			}
 			
-			Button showbutton = (Button)GetNode(path);
-			if (showbutton != null)
-			{
-				showbutton.Visible = true;
-			}
-			Panel Panelbutton = (Panel)GetNode(path);
-			if (Panelbutton != null)
-			{
-				Panelbutton.Visible = true;
-			}
 		}
 		if (path2.ToString() != "")
 		{
-			Label hidelabel = (Label)GetNode(path);
+			CanvasItem hidelabel = (CanvasItem)GetNode(path);
 			if (hidelabel != null)
 			{
 				hidelabel.Visible = false; //!hidelabel.Visible;
 			}
-			
-			Button hidebutton = (Button)GetNode(path);
-			if (hidebutton != null)
-			{
-				hidebutton.Visible = false;
-			}
-			Panel hidePanel = (Panel)GetNode(path);
-			if (hidePanel != null)
-			{
-				hidePanel.Visible = false;
-			}
-
 		}
 
 		if (incrementDay)
