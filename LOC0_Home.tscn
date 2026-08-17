@@ -196,3 +196,34 @@ text = "The guidebook says:
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
 stream = ExtResource("11_pov2w")
 autoplay = true
+
+[node name="supplies" parent="." unique_id=718165667 instance=ExtResource("10_u5ig0")]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 96.0
+offset_bottom = 85.0
+text = "supplies"
+
+[node name="BaseLabel" parent="." unique_id=1718247875 instance=ExtResource("10_u5ig0")]
+layout_mode = 0
+offset_left = 130.0
+offset_right = 224.0
+offset_bottom = 85.0
+text = ""
+metadata/SetAsOverrideLabel = "supplies"
+
+[node name="ammo" parent="." unique_id=1022002926 instance=ExtResource("10_u5ig0")]
+layout_mode = 0
+offset_top = 85.0
+offset_right = 94.0
+offset_bottom = 170.0
+text = "ammo"
+
+[node name="BaseLabel2" parent="." unique_id=1701665128 instance=ExtResource("10_u5ig0")]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 85.0
+offset_right = 224.0
+offset_bottom = 170.0
+text = ""
+metadata/SetAsOverrideLabel = "ammo"
