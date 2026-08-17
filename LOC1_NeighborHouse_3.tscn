@@ -1,16 +1,16 @@
-[gd_scene format=3 uid="uid://esw8osti3ye4"]
+[gd_scene format=3 uid="uid://bbcpgeoobx48v"]
 
-[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_qcy86"]
-[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="2_fdjwg"]
-[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_isec6"]
-[ext_resource type="Texture2D" uid="uid://lgp8bcprfhn5" path="res://sprites/background_chair_2.png" id="3_qlqij"]
-[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_h6psl"]
-[ext_resource type="Texture2D" uid="uid://5anry86opiij" path="res://sprites/background_stairs.png" id="4_oxtgm"]
-[ext_resource type="Texture2D" uid="uid://buvx3bndybsg8" path="res://sprites/background_crate.png" id="5_2a3e1"]
-[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_lu8ki"]
-[ext_resource type="Texture2D" uid="uid://bx4pgykis873c" path="res://sprites/background_suitcases.png" id="6_egv2k"]
-[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="7_dmxtl"]
-[ext_resource type="Texture2D" uid="uid://7lss5ny6u3wt" path="res://sprites/background_chair_1.png" id="8_dkw3n"]
+[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_7r7tc"]
+[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="2_tuoga"]
+[ext_resource type="Texture2D" uid="uid://lgp8bcprfhn5" path="res://sprites/background_chair_2.png" id="3_1f0in"]
+[ext_resource type="Texture2D" uid="uid://5anry86opiij" path="res://sprites/background_stairs.png" id="4_lxivv"]
+[ext_resource type="Texture2D" uid="uid://buvx3bndybsg8" path="res://sprites/background_crate.png" id="5_bsr88"]
+[ext_resource type="Texture2D" uid="uid://bx4pgykis873c" path="res://sprites/background_suitcases.png" id="6_doaby"]
+[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="7_gs8mk"]
+[ext_resource type="Texture2D" uid="uid://7lss5ny6u3wt" path="res://sprites/background_chair_1.png" id="8_jdpq0"]
+[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="9_rrd45"]
+[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="10_twnmm"]
+[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="11_04uqp"]
 
 [node name="NpcInteraction" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -23,58 +23,58 @@ grow_vertical = 2
 [node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=350363733]
 position = Vector2(577, 321)
 scale = Vector2(2.7122643, 2.0445862)
-texture = ExtResource("1_qcy86")
+texture = ExtResource("1_7r7tc")
 
 [node name="BoundingBox" type="Sprite2D" parent="." unique_id=2100640328]
 texture_filter = 1
 position = Vector2(580.00006, 134)
 scale = Vector2(3.5, 3.5)
-texture = ExtResource("2_fdjwg")
+texture = ExtResource("2_tuoga")
 
 [node name="BackgroundChair2" type="Sprite2D" parent="BoundingBox" unique_id=2112720326]
 position = Vector2(22.285694, 14.571425)
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("3_qlqij")
+texture = ExtResource("3_1f0in")
 
 [node name="BackgroundStairs" type="Sprite2D" parent="BoundingBox" unique_id=1039453246]
 position = Vector2(74.85712, 7.42857)
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("4_oxtgm")
+texture = ExtResource("4_lxivv")
 
 [node name="BackgroundCrate" type="Sprite2D" parent="BoundingBox" unique_id=809554477]
 position = Vector2(-18.571444, 5.7142844)
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("5_2a3e1")
+texture = ExtResource("5_bsr88")
 
 [node name="BackgroundCrate2" type="Sprite2D" parent="BoundingBox" unique_id=930255253]
 position = Vector2(-18.571444, 14.571427)
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("5_2a3e1")
+texture = ExtResource("5_bsr88")
 
 [node name="BackgroundCrate3" type="Sprite2D" parent="BoundingBox" unique_id=1881383767]
 position = Vector2(-12.785729, 5.7142844)
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("5_2a3e1")
+texture = ExtResource("5_bsr88")
 
 [node name="BackgroundCrate4" type="Sprite2D" parent="BoundingBox" unique_id=535931209]
 position = Vector2(-12.785729, 14.571427)
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("5_2a3e1")
+texture = ExtResource("5_bsr88")
 
 [node name="BackgroundSuitcases" type="Sprite2D" parent="BoundingBox" unique_id=1862809757]
 position = Vector2(-56.857166, 14.000004)
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("6_egv2k")
+texture = ExtResource("6_doaby")
 
 [node name="PcSurvivor" type="Sprite2D" parent="BoundingBox" unique_id=1092487278]
 position = Vector2(-72.000015, 10.571426)
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("7_dmxtl")
+texture = ExtResource("7_gs8mk")
 
 [node name="BackgroundChair1" type="Sprite2D" parent="BoundingBox" unique_id=726637027]
 position = Vector2(40.857124, 15.999998)
 rotation = 4.712389
-texture = ExtResource("8_dkw3n")
+texture = ExtResource("8_jdpq0")
 
 [node name="PlayerResponses2" type="Panel" parent="." unique_id=200547613]
 layout_mode = 0
@@ -83,34 +83,34 @@ offset_top = 418.0
 offset_right = 928.0
 offset_bottom = 611.0
 
-[node name="ResponseBase" parent="PlayerResponses2" unique_id=647485743 instance=ExtResource("3_isec6")]
+[node name="ResponseBase" parent="PlayerResponses2" unique_id=647485743 instance=ExtResource("9_rrd45")]
+visible = false
 layout_mode = 0
 offset_left = 0.0
 offset_top = 13.0
 offset_right = 689.8451
 offset_bottom = 76.00006
 text = "Check the pantry"
-metadata/SceneTransition = "LOC1_NeighborHouse_2.tscn"
-metadata/SetGlobal = "LOC2_gas_station"
 
-[node name="ResponseBase2" parent="PlayerResponses2" unique_id=23475542 instance=ExtResource("3_isec6")]
+[node name="ResponseBase2" parent="PlayerResponses2" unique_id=23475542 instance=ExtResource("9_rrd45")]
+visible = false
 layout_mode = 0
 offset_left = 0.0
 offset_top = 70.0
 offset_right = 689.8451
 offset_bottom = 133.00006
 text = "Check upstairs"
-metadata/SceneTransition = "LOC1_NeighborHouse_4.tscn"
-metadata/SetGlobal = "LOC3_clinic"
 
-[node name="ResponseBase3" parent="PlayerResponses2" unique_id=1499572783 instance=ExtResource("3_isec6")]
-visible = false
+[node name="ResponseBase3" parent="PlayerResponses2" unique_id=1499572783 instance=ExtResource("9_rrd45")]
 layout_mode = 0
 offset_left = 0.0
 offset_top = 125.0
 offset_right = 689.8451
 offset_bottom = 188.00006
 text = "Return home, consume supply"
+metadata/SceneTransition = "LOC0_Home.tscn"
+metadata/IncrementDay = true
+metadata/AddSupplies = -1
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
 layout_mode = 0
@@ -119,7 +119,8 @@ offset_top = 216.0
 offset_right = 1113.0
 offset_bottom = 396.0
 
-[node name="Prose1" parent="Panel" unique_id=250299459 instance=ExtResource("4_h6psl")]
+[node name="Prose1" parent="Panel" unique_id=250299459 instance=ExtResource("10_twnmm")]
+visible = false
 layout_mode = 0
 text = "The neighbors left their house unlocked. You let yourself in without a sound. The air is cloying and stale.
 
@@ -131,7 +132,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="PantryChoice" parent="Panel" unique_id=1568034569 instance=ExtResource("4_h6psl")]
+[node name="PantryChoice" parent="Panel" unique_id=1568034569 instance=ExtResource("10_twnmm")]
 visible = false
 layout_mode = 0
 text = "The neighbors didn't have much before they left, or maybe they took their nonperishables. It doesn't matter now. There's a few cans in here, and you put them in your backpack.
@@ -141,7 +142,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="UpstairsChoice" parent="Panel" unique_id=387295285 instance=ExtResource("4_h6psl")]
+[node name="UpstairsChoice" parent="Panel" unique_id=387295285 instance=ExtResource("10_twnmm")]
 visible = false
 layout_mode = 0
 text = "The bedrooms have clothing scattered over the furniture and on the floor. In the master, a safe sits open, its contents spilled out before it. Bills, papers, jewelery. Plenty of value, nothing of use. 
@@ -157,8 +158,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose6" parent="Panel" unique_id=1638802790 instance=ExtResource("4_h6psl")]
-visible = false
+[node name="Prose6" parent="Panel" unique_id=1638802790 instance=ExtResource("10_twnmm")]
 layout_mode = 0
 text = "From the second floor widow, you can see some locations of note:
 
@@ -171,5 +171,5 @@ metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
-stream = ExtResource("5_lu8ki")
+stream = ExtResource("11_04uqp")
 autoplay = true
