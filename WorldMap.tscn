@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dyll0imfmgh02" path="res://map_black_background_higher_res.png" id="1_y2wwp"]
 [ext_resource type="Texture2D" uid="uid://ct325awstd8w0" path="res://home.png" id="2_eceo5"]
-[ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="3_x5pqh"]
+[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_37m1j"]
 [ext_resource type="Texture2D" uid="uid://0hge526jnqw4" path="res://down.png" id="4_37m1j"]
 [ext_resource type="AudioStream" uid="uid://dpij54b17eicw" path="res://sounds/old city theme.ogg" id="5_x5pqh"]
 
@@ -19,133 +19,96 @@ position = Vector2(576, 324)
 scale = Vector2(2.7169812, 2.0636942)
 texture = ExtResource("1_y2wwp")
 
-[node name="Home" type="Button" parent="." unique_id=1048671598]
+[node name="ResponseBase" parent="." unique_id=769636508 instance=ExtResource("3_37m1j")]
 layout_mode = 0
-offset_left = 561.0
-offset_top = 312.0
-offset_right = 619.0
-offset_bottom = 370.0
+offset_left = 564.0
+offset_top = 308.0
+offset_right = 622.0
+offset_bottom = 371.00006
+text = ""
 icon = ExtResource("2_eceo5")
+metadata/SceneTransition = "LOC0_Home.tscn"
 
 [node name="Phase1" type="Control" parent="." unique_id=1272157236]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="NeighborHouse" type="Button" parent="Phase1" unique_id=1573411948]
+[node name="NeighborHouse" parent="Phase1" unique_id=1346944812 instance=ExtResource("3_37m1j")]
 layout_mode = 0
-offset_left = 560.0
-offset_top = 378.0
-offset_right = 772.0
-offset_bottom = 436.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
-text = "Neighbor's house"
+offset_left = 549.0
+offset_top = 396.0
+offset_right = 765.0
+offset_bottom = 459.00006
+text = "Neighbor's House"
 icon = ExtResource("4_37m1j")
+metadata/SceneTransition = "LOC1_NeighborHouse.tscn"
 
 [node name="Phase2" type="Control" parent="." unique_id=267556850]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="GasStation" type="Button" parent="Phase2" unique_id=391102362]
+[node name="GasStation" parent="Phase2" unique_id=958141909 instance=ExtResource("3_37m1j")]
+visible = false
 layout_mode = 0
-offset_left = 685.0
-offset_top = 445.0
-offset_right = 897.0
-offset_bottom = 503.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
+offset_left = 687.0
+offset_top = 447.0
+offset_right = 857.0
+offset_bottom = 510.00006
 text = "Gas Station"
 icon = ExtResource("4_37m1j")
+metadata/SceneTransition = "LOC2_GasStation.tscn"
 
-[node name="Clinic" type="Button" parent="Phase2" unique_id=1133725142]
+[node name="Clinic" parent="Phase2" unique_id=1638276249 instance=ExtResource("3_37m1j")]
 layout_mode = 0
-offset_left = 676.0
-offset_top = 218.0
-offset_right = 888.0
-offset_bottom = 276.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
+offset_left = 679.0
+offset_top = 215.0
+offset_right = 787.0
+offset_bottom = 278.00006
 text = "Clinic"
 icon = ExtResource("4_37m1j")
-
-[node name="Apartment Complex" type="Button" parent="Phase2" unique_id=363756428]
-layout_mode = 0
-offset_left = 459.0
-offset_top = 259.0
-offset_right = 693.0
-offset_bottom = 317.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
-text = "Apartment Complex"
-icon = ExtResource("4_37m1j")
+metadata/SceneTransition = "LOC3_Clinic.tscn"
 
 [node name="Phase3" type="Control" parent="." unique_id=244947179]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Alleyway" type="Button" parent="Phase3" unique_id=221330797]
+[node name="Alleyway" parent="Phase3" unique_id=2035907688 instance=ExtResource("3_37m1j")]
 layout_mode = 0
-offset_left = 786.0
-offset_top = 304.0
-offset_right = 1020.0
-offset_bottom = 362.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
+offset_left = 768.0
+offset_top = 299.0
+offset_right = 904.0
+offset_bottom = 362.00006
 text = "Alleyway"
 icon = ExtResource("4_37m1j")
-
-[node name="Train Station" type="Button" parent="Phase3" unique_id=1860109692]
-layout_mode = 0
-offset_left = 202.0
-offset_top = 300.0
-offset_right = 436.0
-offset_bottom = 358.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
-text = "Train Station"
-icon = ExtResource("4_37m1j")
+metadata/SceneTransition = "LOC5_Alleyway.tscn"
 
 [node name="Phase4" type="Control" parent="." unique_id=991134156]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Nice House" type="Button" parent="Phase4" unique_id=783390627]
+[node name="NiceHouse" parent="Phase4" unique_id=488514450 instance=ExtResource("3_37m1j")]
 layout_mode = 0
-offset_left = 719.0
-offset_top = 167.0
-offset_right = 953.0
-offset_bottom = 225.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
+offset_left = 713.0
+offset_top = 166.0
+offset_right = 873.0
+offset_bottom = 229.00006
 text = "Nice House"
 icon = ExtResource("4_37m1j")
+metadata/SceneTransition = "LOC7_NiceHouse.tscn"
 
-[node name="Police Station" type="Button" parent="Phase4" unique_id=934261710]
+[node name="ResponseBase" parent="Phase4" unique_id=843582130 instance=ExtResource("3_37m1j")]
 layout_mode = 0
-offset_left = 373.0
-offset_top = 486.0
-offset_right = 607.0
-offset_bottom = 544.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
-text = "Police Station"
-icon = ExtResource("4_37m1j")
-
-[node name="Grocery Store" type="Button" parent="Phase4" unique_id=1154148326]
-layout_mode = 0
-offset_left = 493.0
-offset_top = 143.0
-offset_right = 727.0
-offset_bottom = 201.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
+offset_left = 491.0
+offset_top = 136.0
+offset_right = 687.0
+offset_bottom = 199.00006
 text = "Grocery Store"
 icon = ExtResource("4_37m1j")
-
-[node name="Parking Garage" type="Button" parent="Phase4" unique_id=1627918289]
-layout_mode = 0
-offset_left = 525.0
-offset_top = 67.0
-offset_right = 759.0
-offset_bottom = 125.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
-text = "Parking Garage"
-icon = ExtResource("4_37m1j")
+metadata/SceneTransition = "LOC9_GroceryStore.tscn"
 
 [node name="Phase5" type="Control" parent="." unique_id=988038262]
 anchors_preset = 0
@@ -154,36 +117,15 @@ offset_top = 67.0
 offset_right = 565.0
 offset_bottom = 107.0
 
-[node name="Construction Site" type="Button" parent="Phase5" unique_id=328566916]
+[node name="ResponseBase" parent="Phase5" unique_id=1451279102 instance=ExtResource("3_37m1j")]
 layout_mode = 0
-offset_left = -254.0
-offset_top = 98.0
-offset_right = -20.0
-offset_bottom = 156.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
-text = "Construction Site"
+offset_left = -302.0
+offset_top = 7.0
+offset_right = -168.0
+offset_bottom = 70.00006
+text = "Hospital"
 icon = ExtResource("4_37m1j")
-
-[node name="Hospital" type="Button" parent="Phase5" unique_id=900591551]
-layout_mode = 0
-offset_left = -305.0
-offset_top = 11.0
-offset_right = -71.0
-offset_bottom = 69.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
-text = "Hospital
-"
-icon = ExtResource("4_37m1j")
-
-[node name="Office Building" type="Button" parent="Phase5" unique_id=878415031]
-layout_mode = 0
-offset_left = 335.0
-offset_top = 510.0
-offset_right = 569.0
-offset_bottom = 568.0
-theme_override_fonts/font = ExtResource("3_x5pqh")
-text = "Office Building"
-icon = ExtResource("4_37m1j")
+metadata/SceneTransition = "LOC13_Hospital.tscn"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1877171222]
 stream = ExtResource("5_x5pqh")
