@@ -50,7 +50,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="GasStation" parent="Phase2" unique_id=958141909 instance=ExtResource("3_37m1j")]
-visible = false
 layout_mode = 0
 offset_left = 687.0
 offset_top = 447.0
@@ -68,7 +67,7 @@ offset_left = 679.0
 offset_top = 215.0
 offset_right = 787.0
 offset_bottom = 278.00006
-text = "Clinic"
+text = "Clinic (-2 supplies)"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC3_Clinic.tscn"
 metadata/ShowOnVar = "LOC3_clinic"
@@ -79,14 +78,16 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Alleyway" parent="Phase3" unique_id=2035907688 instance=ExtResource("3_37m1j")]
+visible = false
 layout_mode = 0
 offset_left = 768.0
 offset_top = 299.0
 offset_right = 904.0
 offset_bottom = 362.00006
-text = "Alleyway (2 supplies)"
+text = "Alleyway (-2 supplies)"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC5_Alleyway.tscn"
+metadata/ShowOnVar = "add_alleyway"
 
 [node name="Phase4" type="Control" parent="." unique_id=991134156]
 anchors_preset = 0
@@ -99,7 +100,7 @@ offset_left = 713.0
 offset_top = 166.0
 offset_right = 873.0
 offset_bottom = 229.00006
-text = "Nice House"
+text = "Nice House (-3 supplies)"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC7_NiceHouse.tscn"
 
