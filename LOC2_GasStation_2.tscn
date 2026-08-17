@@ -1,15 +1,15 @@
-[gd_scene format=3 uid="uid://1lcxu81v384a"]
+[gd_scene format=3 uid="uid://c2puark8xlicm"]
 
-[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_f5scv"]
-[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="2_g8sbv"]
-[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="3_cr0ll"]
-[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="3_vmval"]
-[ext_resource type="Texture2D" uid="uid://bhs4fjey7uuox" path="res://sprites/background_car.png" id="4_eiu8v"]
-[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="4_lt4y4"]
-[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="5_2m3uj"]
-[ext_resource type="Texture2D" uid="uid://ycs3q6ilkfhp" path="res://sprites/background_gas_pumps.png" id="5_h5viu"]
-[ext_resource type="Texture2D" uid="uid://dcu23hwv5nat" path="res://sprites/background_shelves.png" id="6_hfhdt"]
-[ext_resource type="Texture2D" uid="uid://bfl6lwk6vdf6w" path="res://sprites/npc_bearded_man.png" id="7_2apcr"]
+[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_sndwr"]
+[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="2_8ltwi"]
+[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="3_nyybc"]
+[ext_resource type="Texture2D" uid="uid://bhs4fjey7uuox" path="res://sprites/background_car.png" id="4_gca1h"]
+[ext_resource type="Texture2D" uid="uid://ycs3q6ilkfhp" path="res://sprites/background_gas_pumps.png" id="5_j72i8"]
+[ext_resource type="Texture2D" uid="uid://dcu23hwv5nat" path="res://sprites/background_shelves.png" id="6_6luqa"]
+[ext_resource type="Texture2D" uid="uid://bfl6lwk6vdf6w" path="res://sprites/npc_bearded_man.png" id="7_isrm5"]
+[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="8_t1lon"]
+[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="9_pcfi4"]
+[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="10_d5dha"]
 
 [node name="NpcInteraction2" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -22,36 +22,37 @@ grow_vertical = 2
 [node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=350363733]
 position = Vector2(578, 321)
 scale = Vector2(2.7122643, 2.0445862)
-texture = ExtResource("1_f5scv")
+texture = ExtResource("1_sndwr")
 
 [node name="BoundingBox" type="Sprite2D" parent="." unique_id=1430020147]
 texture_filter = 1
 position = Vector2(580.00006, 134)
 scale = Vector2(3.5, 3.5)
-texture = ExtResource("2_g8sbv")
+texture = ExtResource("2_8ltwi")
 
 [node name="PcSurvivor" type="Sprite2D" parent="BoundingBox" unique_id=1634165838]
 position = Vector2(-32.85717, 10.285712)
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("3_vmval")
+texture = ExtResource("3_nyybc")
 
 [node name="BackgroundCar" type="Sprite2D" parent="BoundingBox" unique_id=1934676367]
 position = Vector2(-70.000015, 9.428571)
-texture = ExtResource("4_eiu8v")
+texture = ExtResource("4_gca1h")
 
 [node name="BackgroundGasPumps" type="Sprite2D" parent="BoundingBox" unique_id=693166327]
 position = Vector2(-10.571448, 9.714287)
-texture = ExtResource("5_h5viu")
+texture = ExtResource("5_j72i8")
 
 [node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox" unique_id=1642150589]
 position = Vector2(37.42855, 5.9999986)
-texture = ExtResource("6_hfhdt")
+texture = ExtResource("6_6luqa")
 
 [node name="NpcBeardedMan" type="Sprite2D" parent="BoundingBox" unique_id=1550980904]
 position = Vector2(78.85712, 10.857142)
-texture = ExtResource("7_2apcr")
+texture = ExtResource("7_isrm5")
 
 [node name="Intro" type="Container" parent="." unique_id=420166487]
+visible = false
 layout_mode = 0
 offset_left = 45.0
 offset_top = 227.0
@@ -61,7 +62,7 @@ offset_bottom = 267.0
 [node name="Panel" type="Panel" parent="Intro" unique_id=1779720814]
 layout_mode = 2
 
-[node name="Intro" parent="Intro/Panel" unique_id=250299459 instance=ExtResource("4_lt4y4")]
+[node name="Intro" parent="Intro/Panel" unique_id=250299459 instance=ExtResource("8_t1lon")]
 layout_mode = 0
 offset_top = 20.0
 offset_bottom = 200.0
@@ -78,17 +79,17 @@ metadata/HideOnVar = ""
 [node name="IntroResponses" type="Panel" parent="Intro" unique_id=529216286]
 layout_mode = 2
 
-[node name="IntroResponse" parent="Intro/IntroResponses" unique_id=769636508 instance=ExtResource("3_cr0ll")]
+[node name="IntroResponse" parent="Intro/IntroResponses" unique_id=769636508 instance=ExtResource("9_pcfi4")]
 layout_mode = 0
 offset_left = 197.0
 offset_top = 195.0
 offset_right = 886.8451
 offset_bottom = 258.00006
 text = "Check the service building."
-metadata/SceneTransition = "LOC2_GasStation_2.tscn"
+metadata/ShowLabel = NodePath("../../../InsideBldg")
+metadata/HideLabel = NodePath("../..")
 
 [node name="InsideBldg" type="Container" parent="." unique_id=1679770606]
-visible = false
 layout_mode = 0
 offset_left = 28.0
 offset_top = 244.0
@@ -98,7 +99,7 @@ offset_bottom = 284.0
 [node name="Panel2" type="Panel" parent="InsideBldg" unique_id=1997027898]
 layout_mode = 2
 
-[node name="InsideBldg" parent="InsideBldg/Panel2" unique_id=1662597028 instance=ExtResource("4_lt4y4")]
+[node name="InsideBldg" parent="InsideBldg/Panel2" unique_id=1662597028 instance=ExtResource("8_t1lon")]
 layout_mode = 0
 offset_left = 23.0
 offset_right = 1097.0
@@ -112,7 +113,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="InsideBldgResponse" parent="InsideBldg/Panel2" unique_id=498001538 instance=ExtResource("3_cr0ll")]
+[node name="InsideBldgResponse" parent="InsideBldg/Panel2" unique_id=498001538 instance=ExtResource("9_pcfi4")]
 layout_mode = 0
 offset_left = 226.0
 offset_top = 184.0
@@ -120,8 +121,7 @@ offset_right = 915.8451
 offset_bottom = 247.00006
 text = "He speaks.
 "
-metadata/ShowLabel = NodePath("../../../Convo")
-metadata/HideLabel = NodePath("../..")
+metadata/SceneTransition = "LOC2_GasStation_3.tscn"
 
 [node name="Convo" type="Container" parent="." unique_id=1716669739]
 visible = false
@@ -134,7 +134,7 @@ offset_bottom = 463.0
 [node name="ConvoResponses" type="Panel" parent="Convo" unique_id=110913281]
 layout_mode = 2
 
-[node name="ResponseBase" parent="Convo/ConvoResponses" unique_id=131313378 instance=ExtResource("3_cr0ll")]
+[node name="ResponseBase" parent="Convo/ConvoResponses" unique_id=131313378 instance=ExtResource("9_pcfi4")]
 layout_mode = 0
 offset_left = 0.0
 offset_top = 31.0
@@ -144,7 +144,7 @@ text = "Share the supplies"
 metadata/ShowLabel = NodePath("../../../ShareSuppliesResult")
 metadata/HideLabel = NodePath("../..")
 
-[node name="ResponseBase2" parent="Convo/ConvoResponses" unique_id=310151433 instance=ExtResource("3_cr0ll")]
+[node name="ResponseBase2" parent="Convo/ConvoResponses" unique_id=310151433 instance=ExtResource("9_pcfi4")]
 layout_mode = 0
 offset_left = 0.0
 offset_top = 88.0
@@ -157,7 +157,7 @@ metadata/HideLabel = NodePath("../..")
 [node name="Panel3" type="Panel" parent="Convo" unique_id=1943002330]
 layout_mode = 2
 
-[node name="Convo2" parent="Convo/Panel3" unique_id=2123301580 instance=ExtResource("4_lt4y4")]
+[node name="Convo2" parent="Convo/Panel3" unique_id=2123301580 instance=ExtResource("8_t1lon")]
 layout_mode = 0
 offset_left = -192.0
 offset_top = -196.0
@@ -187,7 +187,7 @@ offset_bottom = 432.0
 [node name="Panel4" type="Panel" parent="ShareSuppliesResult" unique_id=770032470]
 layout_mode = 2
 
-[node name="ShareSuppliesResult" parent="ShareSuppliesResult/Panel4" unique_id=1283003208 instance=ExtResource("4_lt4y4")]
+[node name="ShareSuppliesResult" parent="ShareSuppliesResult/Panel4" unique_id=1283003208 instance=ExtResource("8_t1lon")]
 layout_mode = 0
 offset_left = -165.0
 offset_top = -161.0
@@ -202,7 +202,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="ReturnHomeResponse" parent="ShareSuppliesResult" unique_id=1552222841 instance=ExtResource("3_cr0ll")]
+[node name="ReturnHomeResponse" parent="ShareSuppliesResult" unique_id=1552222841 instance=ExtResource("9_pcfi4")]
 layout_mode = 2
 text = "Return home, consume supply.
 "
@@ -222,7 +222,7 @@ offset_bottom = 479.0
 [node name="Panel5" type="Panel" parent="DoNotResult" unique_id=412602281]
 layout_mode = 2
 
-[node name="DoNotResult" parent="DoNotResult/Panel5" unique_id=888736971 instance=ExtResource("4_lt4y4")]
+[node name="DoNotResult" parent="DoNotResult/Panel5" unique_id=888736971 instance=ExtResource("8_t1lon")]
 layout_mode = 0
 offset_left = -187.0
 offset_top = -158.0
@@ -237,7 +237,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="ReturnHomeResponse2" parent="DoNotResult" unique_id=18412691 instance=ExtResource("3_cr0ll")]
+[node name="ReturnHomeResponse2" parent="DoNotResult" unique_id=18412691 instance=ExtResource("9_pcfi4")]
 layout_mode = 2
 text = "Return home, consume supply.
 "
@@ -245,5 +245,5 @@ metadata/SceneTransition = "LOC0_Home.tscn"
 metadata/IncrementDay = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
-stream = ExtResource("5_2m3uj")
+stream = ExtResource("10_d5dha")
 autoplay = true

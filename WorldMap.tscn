@@ -59,8 +59,10 @@ offset_bottom = 510.00006
 text = "Gas Station"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC2_GasStation.tscn"
+metadata/ShowOnVar = "LOC2_gas_station"
 
 [node name="Clinic" parent="Phase2" unique_id=1638276249 instance=ExtResource("3_37m1j")]
+visible = false
 layout_mode = 0
 offset_left = 679.0
 offset_top = 215.0
@@ -69,6 +71,7 @@ offset_bottom = 278.00006
 text = "Clinic"
 icon = ExtResource("4_37m1j")
 metadata/SceneTransition = "LOC3_Clinic.tscn"
+metadata/ShowOnVar = "LOC3_clinic"
 
 [node name="Phase3" type="Control" parent="." unique_id=244947179]
 anchors_preset = 0
