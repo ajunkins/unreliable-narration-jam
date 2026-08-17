@@ -21,7 +21,8 @@ texture = ExtResource("1_34g1f")
 
 [node name="Label" type="Label" parent="." unique_id=507484513]
 layout_mode = 0
-offset_right = 1152.0
+offset_left = 1.0
+offset_right = 1153.0
 offset_bottom = 324.0
 theme_override_fonts/font = ExtResource("2_57bgq")
 theme_override_font_sizes/font_size = 36
@@ -36,6 +37,16 @@ offset_right = 1152.0
 offset_bottom = 648.0
 theme_override_fonts/font = ExtResource("2_57bgq")
 text = "THE END"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Label" unique_id=830094932]
+layout_mode = 0
+offset_top = 184.0
+offset_right = 1152.0
+offset_bottom = 508.0
+theme_override_fonts/font = ExtResource("2_57bgq")
+text = "Your body lies cold on the ground."
 horizontal_alignment = 1
 vertical_alignment = 1
 

@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://dylejavamx1tq"]
+[gd_scene format=3 uid="uid://hcja0k4antjq"]
 
-[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_nhpl3"]
-[ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="2_yvwg5"]
-[ext_resource type="AudioStream" uid="uid://dpij54b17eicw" path="res://sounds/old city theme.ogg" id="3_yvwg5"]
+[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_cwyka"]
+[ext_resource type="FontFile" uid="uid://boppla53lajtb" path="res://original_grafx_fonts/London.ttf" id="2_03vak"]
+[ext_resource type="AudioStream" uid="uid://dpij54b17eicw" path="res://sounds/old city theme.ogg" id="3_cno5h"]
 
 [node name="Control" type="Control" unique_id=1532912088]
 layout_mode = 3
@@ -15,14 +15,14 @@ grow_vertical = 2
 [node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=772930936]
 position = Vector2(576, 324)
 scale = Vector2(2.7169812, 2.0636942)
-texture = ExtResource("1_nhpl3")
+texture = ExtResource("1_cwyka")
 
 [node name="Label" type="Label" parent="." unique_id=507484513]
 layout_mode = 0
 offset_left = 1.0
 offset_right = 1153.0
 offset_bottom = 324.0
-theme_override_fonts/font = ExtResource("2_yvwg5")
+theme_override_fonts/font = ExtResource("2_03vak")
 theme_override_font_sizes/font_size = 19
 text = "You wake to the sound of engines.
 
@@ -36,11 +36,12 @@ vertical_alignment = 2
 autowrap_mode = 3
 
 [node name="if BM_FRIENDLY" type="Label" parent="Label" unique_id=1616562935]
+visible = false
 layout_mode = 0
 offset_top = 260.0
 offset_right = 1152.0
 offset_bottom = 584.0
-theme_override_fonts/font = ExtResource("2_yvwg5")
+theme_override_fonts/font = ExtResource("2_03vak")
 theme_override_font_sizes/font_size = 19
 text = "You see the bearded man. Beside him, holding his hand, is a little girl no more than eight or nine. She wears a ratty school backpack and holds a stuffed animal close to her chest. Her eyes are wide and tired.
 
@@ -50,12 +51,11 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="if MURDERER" type="Label" parent="Label" unique_id=1031857687]
-visible = false
 layout_mode = 0
 offset_top = 260.0
 offset_right = 1152.0
 offset_bottom = 584.0
-theme_override_fonts/font = ExtResource("2_yvwg5")
+theme_override_fonts/font = ExtResource("2_03vak")
 theme_override_font_sizes/font_size = 19
 text = "You're taken to the local police station. A few officers stand around, sporting bulletproof vests and handguns in holsters. More people are sweeiping things up, putting things back together.
 
@@ -70,7 +70,7 @@ offset_left = 1.0
 offset_top = 289.0
 offset_right = 1153.0
 offset_bottom = 613.0
-theme_override_fonts/font = ExtResource("2_yvwg5")
+theme_override_fonts/font = ExtResource("2_03vak")
 theme_override_font_sizes/font_size = 19
 text = "The guidebook didn't mention anything about this.
 
@@ -82,6 +82,6 @@ vertical_alignment = 2
 autowrap_mode = 3
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1307356579]
-stream = ExtResource("3_yvwg5")
+stream = ExtResource("3_cno5h")
 autoplay = true
 parameters/looping = false
