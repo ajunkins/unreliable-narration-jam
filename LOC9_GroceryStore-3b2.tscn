@@ -1,16 +1,16 @@
-[gd_scene format=3 uid="uid://d03262u3la46k"]
+[gd_scene format=3 uid="uid://0bnv7i3121jo"]
 
-[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_u67w4"]
-[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="2_h4lfo"]
-[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="3_ya46k"]
-[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="4_bcry7"]
-[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="5_5ji2l"]
-[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="6_lnkt5"]
-[ext_resource type="Texture2D" uid="uid://ickgbgsstjxm" path="res://sprites/crate.png" id="7_ronot"]
-[ext_resource type="Texture2D" uid="uid://dcu23hwv5nat" path="res://sprites/background_shelves.png" id="8_qxogd"]
-[ext_resource type="Texture2D" uid="uid://dko3jgy51kqk1" path="res://sprites/background_cart_1.png" id="9_t7lok"]
-[ext_resource type="Texture2D" uid="uid://wis0o4c75lp8" path="res://sprites/background_cart_2.png" id="10_ysnj0"]
-[ext_resource type="Texture2D" uid="uid://bfl6lwk6vdf6w" path="res://sprites/npc_bearded_man.png" id="11_vg22i"]
+[ext_resource type="Texture2D" uid="uid://0buc04e5ywoc" path="res://UI_black_Background.png" id="1_md3as"]
+[ext_resource type="PackedScene" uid="uid://c1ik0ke7fqqjs" path="res://Base_response.tscn" id="2_2d385"]
+[ext_resource type="PackedScene" uid="uid://b0y7ta43ux1av" path="res://base_label.tscn" id="3_x1rr7"]
+[ext_resource type="AudioStream" uid="uid://cdrdd4etmuat0" path="res://sounds/bleeding_out2.ogg" id="4_lisu5"]
+[ext_resource type="Texture2D" uid="uid://b0x8nj1mpmquy" path="res://sprites/bounding_box.png" id="5_08rph"]
+[ext_resource type="Texture2D" uid="uid://csid0kamwarls" path="res://sprites/pc_survivor.png" id="6_v0x1y"]
+[ext_resource type="Texture2D" uid="uid://ickgbgsstjxm" path="res://sprites/crate.png" id="7_kmub0"]
+[ext_resource type="Texture2D" uid="uid://dcu23hwv5nat" path="res://sprites/background_shelves.png" id="8_iyfq2"]
+[ext_resource type="Texture2D" uid="uid://dko3jgy51kqk1" path="res://sprites/background_cart_1.png" id="9_ygfy6"]
+[ext_resource type="Texture2D" uid="uid://wis0o4c75lp8" path="res://sprites/background_cart_2.png" id="10_43cj3"]
+[ext_resource type="Texture2D" uid="uid://bfl6lwk6vdf6w" path="res://sprites/npc_bearded_man.png" id="11_wy3r7"]
 
 [node name="NpcInteraction" type="Control" unique_id=1962811433]
 layout_mode = 3
@@ -23,7 +23,7 @@ grow_vertical = 2
 [node name="UiBlackBackground" type="Sprite2D" parent="." unique_id=350363733]
 position = Vector2(577, 321)
 scale = Vector2(2.7122643, 2.0445862)
-texture = ExtResource("1_u67w4")
+texture = ExtResource("1_md3as")
 
 [node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
 layout_mode = 0
@@ -32,14 +32,17 @@ offset_top = 418.0
 offset_right = 928.0
 offset_bottom = 611.0
 
-[node name="ResponseBase" parent="PlayerResponses" unique_id=769636508 instance=ExtResource("2_h4lfo")]
+[node name="ResponseBase" parent="PlayerResponses" unique_id=769636508 instance=ExtResource("2_2d385")]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 59.0
-offset_right = 694.8451
-offset_bottom = 122.00006
+offset_left = 0.0
+offset_top = 35.0
+offset_right = 689.8451
+offset_bottom = 98.00006
 text = "Continue"
-metadata/SceneTransition = "LOC9_GroceryStore-2.tscn"
+metadata/SceneTransition = "LOC9_GroceryStore-4.tscn"
+metadata/SetGlobal = "MURDERER"
+metadata/AddSupplies = 2
+metadata/AddAmmo = 6
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
 layout_mode = 0
@@ -48,17 +51,19 @@ offset_top = 216.0
 offset_right = 1113.0
 offset_bottom = 396.0
 
-[node name="Prose1" parent="Panel" unique_id=250299459 instance=ExtResource("3_ya46k")]
+[node name="Prose1" parent="Panel" unique_id=250299459 instance=ExtResource("3_x1rr7")]
 layout_mode = 0
-text = "
-You make your way away from the wet stench of the produce aisle, moving further back into the store. The chaos lessens the further from the entrance you walk, the more the building resembles its past self, save for the lack of power. You shine your narrow flashlight beam from aisle to aisle, but it isn't the light that informs you of your company - its the sound. A clatter of cans falling to linoleum just a few shelves down.
-"
+text = "You snap your pistol up and take aim. He widens his eyes and turns to run, but you're quick. It takes a few rounds, and the roar of gunfire thunders off the shelves, but he collapses into a heap in the aisle.
+
+It's a good thing the guidebook taught you how to spot a liar, otherwise you'd be bothered by the idea of his daughter left alone. 
+-2 AMMUNITION
++6 SUPPLIES"
 autowrap_mode = 3
 metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose2" parent="Panel" unique_id=1789231839 instance=ExtResource("3_ya46k")]
+[node name="Prose2" parent="Panel" unique_id=1789231839 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "It must have been hit early."
@@ -66,7 +71,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose3" parent="Panel" unique_id=183740052 instance=ExtResource("3_ya46k")]
+[node name="Prose3" parent="Panel" unique_id=183740052 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "You're used to a din of voices over soft music, the beeping of registers, the squeaking wheels on mistreated shopping carts. The utter silence is unnerving, but the guidebook always says to push past your discomfort to survive. The people here were panicked. With the guidebook in hand, you'll make no such mistakes. "
@@ -75,7 +80,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose4" parent="Panel" unique_id=929615537 instance=ExtResource("3_ya46k")]
+[node name="Prose4" parent="Panel" unique_id=929615537 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "You make your way away from the wet stench of the produce aisle, moving further back into the store. The chaos lessens the further from the entrance you walk, the more the building resembles its past self, save for the lack of power. You shine your narrow flashlight beam from aisle to aisle, but it isn't the light that informs you of your company - its the sound. A clatter of cans falling to linoleum just a few shelves down."
@@ -84,7 +89,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose5" parent="Panel" unique_id=819324065 instance=ExtResource("3_ya46k")]
+[node name="Prose5" parent="Panel" unique_id=819324065 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "You draw your pistol and dart forward, shine your light into the darkness. The bearded man stares back, blinking in the cold, harsh light, standing over a pile of tin cans still settling from its mass tumble from the shelves. He holds one can in his left hand, and the machete in his right. The flashlight beam paints his face pale and bonelike. "
@@ -93,7 +98,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose6" parent="Panel" unique_id=1881377344 instance=ExtResource("3_ya46k")]
+[node name="Prose6" parent="Panel" unique_id=1881377344 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "\"Oh, it's just you,\" he says. He watches you take a step back and bares his teeth in what's probably supposed to be a grin. \"Sorry if I surprised you with the, uh--\" He waves his machete at the cans. \"I scared myself, too.\""
@@ -102,7 +107,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose7" parent="Panel" unique_id=1377343399 instance=ExtResource("3_ya46k")]
+[node name="Prose7" parent="Panel" unique_id=1377343399 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "You remain silent."
@@ -110,7 +115,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose8" parent="Panel" unique_id=1917442256 instance=ExtResource("3_ya46k")]
+[node name="Prose8" parent="Panel" unique_id=1917442256 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "He shuffles from foot to foot. \"Hey, that stuff you gave me really came in handy. My daughter's sick, so I'm gonna need most of this, but you can have what's left.\" He nudges a can with his foot. \"She's getting sick,"
@@ -119,7 +124,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose9" parent="Panel" unique_id=791803374 instance=ExtResource("3_ya46k")]
+[node name="Prose9" parent="Panel" unique_id=791803374 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "This sort of greed is what the guidebook warned you about."
@@ -127,7 +132,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose10" parent="Panel" unique_id=1075385727 instance=ExtResource("3_ya46k")]
+[node name="Prose10" parent="Panel" unique_id=1075385727 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "You don't move a muscle. You're not going to let him out of your sight. He gathers up most of the cans into his backpack before backing away. "
@@ -136,7 +141,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose11" parent="Panel" unique_id=1544063136 instance=ExtResource("3_ya46k")]
+[node name="Prose11" parent="Panel" unique_id=1544063136 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "\"I guess I'll catch you later,\" he says, stalking into the darkness. 
@@ -145,7 +150,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose12" parent="Panel" unique_id=755153200 instance=ExtResource("3_ya46k")]
+[node name="Prose12" parent="Panel" unique_id=755153200 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "You listen to his footsteps recede and grip your pistol tighter. He didn't leave much behind.
@@ -157,7 +162,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose13" parent="Panel" unique_id=2123608339 instance=ExtResource("3_ya46k")]
+[node name="Prose13" parent="Panel" unique_id=2123608339 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "You raise your pistol and point it at the bearded man, center of mass. "
@@ -165,7 +170,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose14" parent="Panel" unique_id=363581561 instance=ExtResource("3_ya46k")]
+[node name="Prose14" parent="Panel" unique_id=363581561 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "\"What the hell, man?\" He drops the can and staggers back a few steps. He widens his eyes in surprise, and they shine with an uncanny brightness in the beam of the flashlight. \"What the fuck is wrong with you?\""
@@ -174,7 +179,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose15" parent="Panel" unique_id=942641291 instance=ExtResource("3_ya46k")]
+[node name="Prose15" parent="Panel" unique_id=942641291 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "You flick the point of your pistol to the side. No point in wasting ammunition."
@@ -182,7 +187,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose16" parent="Panel" unique_id=782677739 instance=ExtResource("3_ya46k")]
+[node name="Prose16" parent="Panel" unique_id=782677739 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "\"Jesus christ...\" The bearded man stares at you for another few seconds, shocked and disgusted, before backing away into the darkness. You listen to his footsteps recede and grip your pistol tighter.
@@ -193,7 +198,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose17" parent="Panel" unique_id=79783841 instance=ExtResource("3_ya46k")]
+[node name="Prose17" parent="Panel" unique_id=79783841 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "\"You,\" the bearded man growls. He watches you take a step back and sneers. \"Found your way back here, too, huh? Well, back off, asshole.\" He waves his machete at the cans. \"I got here first.\""
@@ -202,7 +207,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose18" parent="Panel" unique_id=1598973786 instance=ExtResource("3_ya46k")]
+[node name="Prose18" parent="Panel" unique_id=1598973786 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "You remain silent."
@@ -210,7 +215,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose19" parent="Panel" unique_id=1891084390 instance=ExtResource("3_ya46k")]
+[node name="Prose19" parent="Panel" unique_id=1891084390 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "He hunches over. His eyes dart over the space before you. The guidebook has already told you that this means he's calculating the distance between. How fast he can cross it."
@@ -219,7 +224,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose20" parent="Panel" unique_id=2042531583 instance=ExtResource("3_ya46k")]
+[node name="Prose20" parent="Panel" unique_id=2042531583 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "\"Listen, asshole, my daughter is sick. This shit is mine.\" He grins darkly, the creases around his eyes shadowed dark like cuts in the beam of your flashlight. \"You can have what's left. I won't take it all.\" "
@@ -228,7 +233,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose21" parent="Panel" unique_id=1422223234 instance=ExtResource("3_ya46k")]
+[node name="Prose21" parent="Panel" unique_id=1422223234 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "This sort of animal is what the guidebook warned you about."
@@ -236,7 +241,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose22" parent="Panel" unique_id=1752809159 instance=ExtResource("3_ya46k")]
+[node name="Prose22" parent="Panel" unique_id=1752809159 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "You know that an animal cornered is at its most dangerous. You take a step back, and he scoops cans into his backpack until its full, then backs off into the darkness, staring at you all the while with narrowed eyes."
@@ -245,7 +250,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose23" parent="Panel" unique_id=842054262 instance=ExtResource("3_ya46k")]
+[node name="Prose23" parent="Panel" unique_id=842054262 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "There's barely anything left.
@@ -256,7 +261,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose24" parent="Panel" unique_id=2098551008 instance=ExtResource("3_ya46k")]
+[node name="Prose24" parent="Panel" unique_id=2098551008 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "You snap your pistol up and take aim. He widens his eyes and turns to run, but you're quick. It takes a few rounds, and the roar of gunfire thunders off the shelves, but he collapses into a heap in the aisle.
@@ -266,7 +271,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose25" parent="Panel" unique_id=1973743303 instance=ExtResource("3_ya46k")]
+[node name="Prose25" parent="Panel" unique_id=1973743303 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "It's a good thing the guidebook taught you how to spot a liar, otherwise you'd be bothered by the idea of his daughter left alone.
@@ -278,7 +283,7 @@ metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
-[node name="Prose26" parent="Panel" unique_id=1043938831 instance=ExtResource("3_ya46k")]
+[node name="Prose26" parent="Panel" unique_id=1043938831 instance=ExtResource("3_x1rr7")]
 visible = false
 layout_mode = 0
 text = "On your way home, you see the local hospital peeking over a nearby roof. It's a ways away, but the guidebook recommends hospitals as excellent sources of supplies.
@@ -290,68 +295,68 @@ metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=612294110]
-stream = ExtResource("4_bcry7")
+stream = ExtResource("4_lisu5")
 autoplay = true
 
 [node name="BoundingBox" type="Sprite2D" parent="." unique_id=152914685]
 texture_filter = 1
 position = Vector2(580.00006, 134)
 scale = Vector2(3.5, 3.5)
-texture = ExtResource("5_5ji2l")
+texture = ExtResource("5_08rph")
 
 [node name="PcSurvivor" type="Sprite2D" parent="BoundingBox" unique_id=843009957]
 position = Vector2(-69.14286, 11.428569)
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("6_lnkt5")
+texture = ExtResource("6_v0x1y")
 
 [node name="Crate" type="Sprite2D" parent="BoundingBox" unique_id=1930195115]
 position = Vector2(-25.142878, 14.857142)
 rotation = 1.5707964
 scale = Vector2(-1, 1)
-texture = ExtResource("7_ronot")
+texture = ExtResource("7_kmub0")
 
 [node name="Crate3" type="Sprite2D" parent="BoundingBox" unique_id=865676332]
 position = Vector2(-33.428593, 14.857142)
 scale = Vector2(-1, 1)
-texture = ExtResource("7_ronot")
+texture = ExtResource("7_kmub0")
 
 [node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox" unique_id=1363525145]
 position = Vector2(-2.8571558, 3.714284)
-texture = ExtResource("8_qxogd")
+texture = ExtResource("8_iyfq2")
 
 [node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox/BackgroundShelves" unique_id=1797383549]
 position = Vector2(10.000004, 1.7142842)
-texture = ExtResource("8_qxogd")
+texture = ExtResource("8_iyfq2")
 
 [node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox/BackgroundShelves/BackgroundShelves" unique_id=1983385756]
 position = Vector2(10.857147, 3.1428556)
-texture = ExtResource("8_qxogd")
+texture = ExtResource("8_iyfq2")
 
 [node name="BackgroundShelves2" type="Sprite2D" parent="BoundingBox" unique_id=1748502565]
 position = Vector2(-2.8571558, 3.714284)
-texture = ExtResource("8_qxogd")
+texture = ExtResource("8_iyfq2")
 
 [node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox/BackgroundShelves2" unique_id=1175710212]
 position = Vector2(10.000004, 1.7142842)
-texture = ExtResource("8_qxogd")
+texture = ExtResource("8_iyfq2")
 
 [node name="BackgroundShelves" type="Sprite2D" parent="BoundingBox/BackgroundShelves2/BackgroundShelves" unique_id=204406551]
 position = Vector2(10.857147, 3.1428556)
-texture = ExtResource("8_qxogd")
+texture = ExtResource("8_iyfq2")
 
 [node name="BackgroundCart1" type="Sprite2D" parent="BoundingBox" unique_id=1376011775]
 position = Vector2(-50.571445, 14.571427)
 scale = Vector2(0.9, 1)
-texture = ExtResource("9_t7lok")
+texture = ExtResource("9_ygfy6")
 
 [node name="BackgroundCart2" type="Sprite2D" parent="BoundingBox/BackgroundCart1" unique_id=1272802867]
 position = Vector2(122.968254, -1.7857153)
-texture = ExtResource("10_ysnj0")
+texture = ExtResource("10_43cj3")
 
 [node name="BackgroundCart1" type="Sprite2D" parent="BoundingBox/BackgroundCart1" unique_id=2050882875]
 position = Vector2(140.42857, 1.0714275)
-texture = ExtResource("9_t7lok")
+texture = ExtResource("9_ygfy6")
 
 [node name="NpcBeardedMan" type="Sprite2D" parent="BoundingBox" unique_id=1204890290]
 position = Vector2(42.2857, 10.857143)
-texture = ExtResource("11_vg22i")
+texture = ExtResource("11_wy3r7")
