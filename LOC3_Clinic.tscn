@@ -26,7 +26,6 @@ scale = Vector2(2.7122643, 2.0445862)
 texture = ExtResource("1_tbcoe")
 
 [node name="PlayerResponses" type="Panel" parent="." unique_id=529216286]
-visible = false
 layout_mode = 0
 offset_left = 238.0
 offset_top = 418.0
@@ -39,7 +38,9 @@ offset_left = 0.0
 offset_top = 13.0
 offset_right = 689.8451
 offset_bottom = 76.00006
-text = "Check the front desk."
+text = "Check the front desk"
+metadata/ShowLabel = NodePath("../../Panel/Prose2")
+metadata/HideLabel = NodePath("../../Panel/Prose1")
 
 [node name="ResponseBase2" parent="PlayerResponses" unique_id=145729705 instance=ExtResource("3_aepy8")]
 layout_mode = 0
@@ -47,16 +48,19 @@ offset_left = 0.0
 offset_top = 70.0
 offset_right = 689.8451
 offset_bottom = 133.00006
-text = "Check the back rooms."
+text = "Check the back rooms"
+metadata/ShowLabel = NodePath("../../Panel/Prose3")
+metadata/HideLabel = NodePath("../../Panel/Prose1")
 
 [node name="ResponseBase3" parent="PlayerResponses" unique_id=2034856569 instance=ExtResource("3_aepy8")]
-visible = false
 layout_mode = 0
 offset_left = 0.0
 offset_top = 125.0
 offset_right = 689.8451
 offset_bottom = 188.00006
-text = "dont say you aren't spoiled for choice"
+text = "Return home, consume supply"
+metadata/SceneTransition = "LOC0_Home.tscn"
+metadata/AddSupplies = -2
 
 [node name="PlayerResponses2" type="Panel" parent="." unique_id=921791168]
 visible = false
@@ -102,7 +106,12 @@ offset_bottom = 396.0
 [node name="Prose1" parent="Panel" unique_id=250299459 instance=ExtResource("4_drhwi")]
 visible = false
 layout_mode = 0
-text = "Two ambulances stand on the road outside the clinic. Their doors are left open, and you can clearly see the wadded bandages and stained gurneys within. One is still occupied, and judging from the smell, has been there a while. The heat isn't doing any good."
+text = "Two ambulances stand on the road outside the clinic. Their doors are left open, and you can clearly see the wadded bandages and stained gurneys within. One is still occupied, and judging from the smell, has been there a while. The heat isn't doing any good.
+
+The clinic itself is smashed to pieces. You walk through the tall, wide windows, reduced to nothing more than a few shards in each frame, and the glass crunches under your boots. You grip your pistol tightly.
+
+The building is dead silent, and dirty shoe prints smear the floor around the front desk, leading into darkened hallways. 
+"
 autowrap_mode = 3
 metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
@@ -111,16 +120,23 @@ metadata/HideOnVar = ""
 [node name="Prose2" parent="Panel" unique_id=1341343538 instance=ExtResource("4_drhwi")]
 visible = false
 layout_mode = 0
-text = "The clinic itself is smashed to pieces. You walk through the tall, wide windows, reduced to nothing more than a few shards in each frame, and the glass crunches under your boots. You grip your pistol tightly."
+text = "Patient forms and unopened mail stuffs the drawers behind the receptionist's desk. You're about to write it off, when you notice a slip of paper left on the chair. It has an address, and scribbled underneath: 
+
+'MIKEY'S PLACE WILL BE SAFE. MEET THERE SOON. -KELLY'
+
+Seems worth your time. 
++LOCATION"
 autowrap_mode = 3
 metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
 [node name="Prose3" parent="Panel" unique_id=383278121 instance=ExtResource("4_drhwi")]
-visible = false
 layout_mode = 0
-text = "The building is dead silent, and dirty shoe prints smear the floor around the front desk, leading into darkened hallways. "
+text = "Your flashlight cuts through the darkness in a beam too thin to be comforting. You go from door to door, passing examination rooms and broom closets until you reach a space that's been turned upside down. Every cabinet has been pulled open, and cracked pill bottles and smashed first-aid kits litter the floor. At first glance, it looks hopeless, but after some searching, you find a few useful things.
+
++3 SUPPLIES"
+autowrap_mode = 3
 metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
@@ -146,6 +162,7 @@ metadata/ShowOnVar = ""
 metadata/HideOnVar = ""
 
 [node name="Prose6" parent="Panel" unique_id=311857047 instance=ExtResource("4_drhwi")]
+visible = false
 layout_mode = 0
 offset_left = 4.0
 offset_right = 1078.0
