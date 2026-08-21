@@ -109,6 +109,7 @@ offset_right = 689.8451
 offset_bottom = 188.00006
 text = "Return home, consume supply"
 metadata/SceneTransition = "LOC0_Home.tscn"
+metadata/SetGlobal = "LOC3_Clinic"
 metadata/IncrementDay = true
 metadata/AddSupplies = -1
 
@@ -163,9 +164,7 @@ layout_mode = 0
 text = "From the second floor widow, you can see some locations of note:
 
 The local gas station. There's a cluster of cars abandoned near the pumps. 
-+LOC2_gas_station
-A clinic down the street. The front windows are shattered, but it might still hold supplies. 
-+LOC3_clinic"
+A clinic down the street. The front windows are shattered, but it might still hold supplies. "
 metadata/SetAsOverrideLabel = ""
 metadata/ShowOnVar = ""
 metadata/HideOnVar = ""

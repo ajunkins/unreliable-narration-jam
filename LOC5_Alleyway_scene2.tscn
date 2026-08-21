@@ -78,6 +78,7 @@ offset_right = 689.8451
 offset_bottom = 76.00006
 text = "Continue"
 metadata/SceneTransition = "LOC5_Alleyway_scene4.tscn"
+metadata/SetGlobal = "LOC7_NiceHouse"
 metadata/AddSupplies = 3
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]

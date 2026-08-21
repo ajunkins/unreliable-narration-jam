@@ -60,7 +60,6 @@ offset_bottom = 623.00006
 text = "Return home, consume supply
 "
 metadata/SceneTransition = "LOC0_Home.tscn"
-metadata/TestGlobal = "BM_FRIENDLY"
 metadata/AddAmmo = 1
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]

@@ -33,6 +33,7 @@ offset_right = 928.0
 offset_bottom = 611.0
 
 [node name="ResponseBase" parent="PlayerResponses" unique_id=769636508 instance=ExtResource("2_3wasj")]
+visible = false
 layout_mode = 0
 offset_left = 0.0
 offset_top = 13.0
@@ -40,7 +41,7 @@ offset_right = 689.8451
 offset_bottom = 76.00006
 text = "Continue"
 metadata/SceneTransition = "LOC9_GroceryStore-3a.tscn"
-metadata/ShowOnVar = "FLAG BM_LOC2_SUPPLIES_GIVEN"
+metadata/ShowOnVar = "BM_LOC2_SUPPLIES_GIVEN"
 
 [node name="ResponseBase2" parent="PlayerResponses" unique_id=145729705 instance=ExtResource("2_3wasj")]
 layout_mode = 0
@@ -50,7 +51,7 @@ offset_right = 689.8451
 offset_bottom = 133.00006
 text = "Continue"
 metadata/SceneTransition = "LOC9_GroceryStore-3b.tscn"
-metadata/HideOnVar = "FLAG BM_LOC2_SUPPLIES_GIVEN"
+metadata/HideOnVar = "BM_LOC2_SUPPLIES_GIVEN"
 
 [node name="Panel" type="Panel" parent="." unique_id=1779720814]
 layout_mode = 0

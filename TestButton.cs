@@ -142,7 +142,7 @@ public partial class TestButton : Button
 		}
 		//hide on var//todo test
 		string HideOnVar = (string)GetMeta("HideOnVar","");
-		if (Globals.GetMyStoryVars().GetGlobal(ShowOnVar))
+		if (Globals.GetMyStoryVars().GetGlobal(HideOnVar))
 		{
 			this.Visible = false;
 

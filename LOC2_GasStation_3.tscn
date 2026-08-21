@@ -143,6 +143,7 @@ offset_right = 689.8451
 offset_bottom = 94.00006
 text = "Share the supplies"
 metadata/SceneTransition = "LOC2_GasStation_4.tscn"
+metadata/SetGlobal = "BM_LOC2_SUPPLIES_GIVEN"
 
 [node name="ResponseBase2" parent="Convo/ConvoResponses" unique_id=310151433 instance=ExtResource("9_83e0b")]
 layout_mode = 0
